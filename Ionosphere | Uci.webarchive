@@ -1,0 +1,605 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameName_WebResourceDataYtext/htmlUUTF-8_1http://archive.ics.uci.edu/ml/datasets/IonospherePO°J<!DOCTYPE html><html><head>
+<title>UCI Machine Learning Repository: Ionosphere Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css">
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width="100%" bgcolor="#003366">
+<tbody><tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif" border="0"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width="100%" valign="top" align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<form method="GET" action="https://www.google.com/custom" onsubmit="return checkform(this);">
+		<input type="text" name="q" size="30" maxlength="255" value="">
+		<input type="submit" name="sa" value="Search">
+		<input type="hidden" name="cof" value="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type="hidden" name="domains" value="ics.uci.edu">
+		<br>
+		<input type="radio" name="sitesearch" value="ics.uci.edu" checked=""> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type="radio" name="sitesearch" value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://www.google.com/search"><img src="https://www.google.com/logos/Logo_25blk.gif" border="0" alt="Google" align="middle" height="27"></a>
+		<br>
+		</form>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.php"><font size="3" color="#FFDD33"><b>View
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</tbody></table>
+
+
+<br>
+<table width="100%" border="0" cellpadding="2"><tbody><tr><td>
+
+   <table><tbody><tr>
+     <td valign="top">
+	<p>
+	<span class="heading"><b>Ionosphere Data Set</b></span>
+	<br><span class="normal"><i><font size="4">Download</font></i>: <a href="../machine-learning-databases/ionosphere/"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Folder</font></a>, <a href="../machine-learning-databases/ionosphere/ionosphere.names"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: Classification of radar returns from the ionosphere</p>
+     </td>
+     <td><img src="../assets/MLimages/Large52.jpg" hspace="20" vspace="10"> </td>
+   </tr></tbody></table>
+
+<table border="1" cellpadding="6">
+	<tbody><tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">351</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Physical</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Integer, Real</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">34</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">1989-01-01</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">No</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">256966</p></td>
+	</tr>
+	<!--
+	<tr>
+
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">96%</p></td>
+	</tr>
+	-->
+</tbody></table>
+
+
+<br>
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Donor: 
+<br>
+<br>Vince Sigillito (<u>vgs <b>'@'</b> aplcen.apl.jhu.edu</u>)
+<br>
+<br>Source: 
+<br>
+<br>Space Physics Group
+<br>Applied Physics Laboratory
+<br>Johns Hopkins University
+<br>Johns Hopkins Road
+<br>Laurel, MD 20723 </p>
+
+<br>
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">This radar data was collected by a system in Goose Bay, Labrador.  This system consists of a phased array of 16 high-frequency antennas with a total transmitted power on the order of 6.4 kilowatts.  See the paper for more details.  The targets were free electrons in the ionosphere. "Good" radar returns are those showing evidence of some type of structure in the ionosphere.  "Bad" returns are those that do not; their signals pass through the ionosphere.  
+<br>
+<br>Received signals were processed using an autocorrelation function whose arguments are the time of a pulse and the pulse number.  There were 17 pulse numbers for the Goose Bay system.  Instances in this databse are described by 2 attributes per pulse number, corresponding to the complex values returned by the function resulting from the complex electromagnetic signal.</p>
+
+<br>
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">-- All 34 are continuous
+<br>-- The 35th attribute is either "good" or "bad" according to the definition summarized above.  This is a binary classification task.
+<br></p>
+
+<br>
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">Sigillito, V. G., Wing, S. P., Hutton, L. V., \&amp; Baker, K. B. (1989). Classification of radar returns from the ionosphere using neural networks. Johns Hopkins APL Technical Digest, 10, 262-266.
+<br><a href="http://rexa.info/paper/e3d70c8df030be78ab0ea867ef824a9402943eea">[Web Link]</a></p>
+
+<br>
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">Zhi-Hua Zhou and Yuan Jiang. <a
+href="http://rexa.info/paper/e6315f170eea3cc52ade688d0abb40f3372ec35d">NeC4.5: Neural Ensemble Based C4.5</a>. IEEE Trans. Knowl. Data Eng, 16. 2004.  [<a
+href="../support/Ionosphere#e6315f170eea3cc52ade688d0abb40f3372ec35d">View Context</a>].<br><br>Hyunsoo Kim and Se Hyun Park. <a
+href="http://rexa.info/paper/66e4adde5454a4c13960687a350b7bd2b12859db">Data Reduction in Support Vector Machines by a Kernelized Ionic Interaction Model</a>. SDM. 2004.  [<a
+href="../support/Ionosphere#66e4adde5454a4c13960687a350b7bd2b12859db">View Context</a>].<br><br>Glenn Fung and M. Murat Dundar and Jinbo Bi and Bharat Rao. <a
+href="http://rexa.info/paper/49b5aef7a515640b1dde8f9f777d5a1f0c014022">A fast iterative algorithm for fisher discriminant using heterogeneous kernels</a>. ICML. 2004.  [<a
+href="../support/Ionosphere#49b5aef7a515640b1dde8f9f777d5a1f0c014022">View Context</a>].<br><br>Predrag Radivojac and Zoran Obradovic and A. Keith Dunker and Slobodan Vucetic. <a
+href="http://rexa.info/paper/45391c9343dc03f6033eba55364366eddbb693db">Feature Selection Filters Based on the Permutation Test</a>. ECML. 2004.  [<a
+href="../support/Ionosphere#45391c9343dc03f6033eba55364366eddbb693db">View Context</a>].<br><br>Jeroen Eggermont and Joost N. Kok and Walter A. Kosters. <a
+href="http://rexa.info/paper/d64d2705cabed449e8cb2ecc3c3c77c54ee71051">Genetic Programming for data classification: partitioning the search space</a>. SAC. 2004.  [<a
+href="../support/Ionosphere#d64d2705cabed449e8cb2ecc3c3c77c54ee71051">View Context</a>].<br><br>Jennifer G. Dy and Carla Brodley. <a
+href="http://rexa.info/paper/5b3417aa2824988405f9ac934b692af30729b447">Feature Selection for Unsupervised Learning</a>. Journal of Machine Learning Research, 5. 2004.  [<a
+href="../support/Ionosphere#5b3417aa2824988405f9ac934b692af30729b447">View Context</a>].<br><br>Mikhail Bilenko and Sugato Basu and Raymond J. Mooney. <a
+href="http://rexa.info/paper/a3fca86cb1f854c7fd7975e66aae2a5ba3710f8a">Integrating constraints and metric learning in semi-supervised clustering</a>. ICML. 2004.  [<a
+href="../support/Ionosphere#a3fca86cb1f854c7fd7975e66aae2a5ba3710f8a">View Context</a>].<br><br>Dmitriy Fradkin and David Madigan. <a
+href="http://rexa.info/paper/1ddaa5b4eba8093faad88a5426ec586c6ac63f6e">Experiments with random projections for machine learning</a>. KDD. 2003.  [<a
+href="../support/Ionosphere#1ddaa5b4eba8093faad88a5426ec586c6ac63f6e">View Context</a>].<br><br>Michael L. Raymer and Travis E. Doom and Leslie A. Kuhn and William F. Punch. <a
+href="http://rexa.info/paper/076c5b4e7bf69148bcde8c83621ecf1140a7d55c">Knowledge discovery in medical and biological datasets using a hybrid Bayes classifier/evolutionary algorithm</a>. IEEE Transactions on Systems, Man, and Cybernetics, Part B, 33. 2003.  [<a
+href="../support/Ionosphere#076c5b4e7bf69148bcde8c83621ecf1140a7d55c">View Context</a>].<br><br>Marina Skurichina and Ludmila Kuncheva and Robert P W Duin. <a
+href="http://rexa.info/paper/d8bc3a2d334e33553c2c7e052ce8c2fd9ae5718b">Bagging and Boosting for the Nearest Mean Classifier: Effects of Sample Size on Diversity and Accuracy</a>. Multiple Classifier Systems. 2002.  [<a
+href="../support/Ionosphere#d8bc3a2d334e33553c2c7e052ce8c2fd9ae5718b">View Context</a>].<br><br>Robert Burbidge and Matthew Trotter and Bernard F. Buxton and Sean B. Holden. <a
+href="http://rexa.info/paper/c185d513badef2336ca48f64098d4b5df17bf5a4">STAR - Sparsity through Automated Rejection</a>. IWANN (1). 2001.  [<a
+href="../support/Ionosphere#c185d513badef2336ca48f64098d4b5df17bf5a4">View Context</a>].<br><br>P. S and Bradley K. P and Bennett A. Demiriz. <a
+href="http://rexa.info/paper/d254374dd5eab5d871c8010dcbe4ac84ec86ea8c">Constrained K-Means Clustering</a>. Microsoft Research Dept. of Mathematical Sciences One Microsoft Way Dept. of Decision Sciences and Eng. Sys. 2000.  [<a
+href="../support/Ionosphere#d254374dd5eab5d871c8010dcbe4ac84ec86ea8c">View Context</a>].<br><br>Juan J. Rodr##guez and Carlos J. Alonso and Henrik Bostrom. <a
+href="http://rexa.info/paper/179e206cfdc14b74819ce95f39bb68610874578b">Boosting Interval Based Literals</a>. 2000.  [<a
+href="../support/Ionosphere#179e206cfdc14b74819ce95f39bb68610874578b">View Context</a>].<br><br>Colin Campbell and Nello Cristianini and Alex J. Smola. <a
+href="http://rexa.info/paper/492fa3ac5e4f32e8d4bb1be1225c4fcf8739a553">Query Learning with Large Margin Classifiers</a>. ICML. 2000.  [<a
+href="../support/Ionosphere#492fa3ac5e4f32e8d4bb1be1225c4fcf8739a553">View Context</a>].<br><br>Marina Skurichina and Robert P W Duin. <a
+href="http://rexa.info/paper/0b088e37f14f4bd30ad6c550b543306c6363eaa7">Boosting in Linear Discriminant Analysis</a>. Multiple Classifier Systems. 2000.  [<a
+href="../support/Ionosphere#0b088e37f14f4bd30ad6c550b543306c6363eaa7">View Context</a>].<br><br>Lorne Mason and Peter L. Bartlett and Jonathan Baxter. <a
+href="http://rexa.info/paper/63e63c88edc486c3b1b2aeebb790f88a119536c9">Improved Generalization Through Explicit Optimization of Margins</a>. Machine Learning, 38. 2000.  [<a
+href="../support/Ionosphere#63e63c88edc486c3b1b2aeebb790f88a119536c9">View Context</a>].<br><br>Justin Bradley and Kristin P. Bennett and Bennett A. Demiriz. <a
+href="http://rexa.info/paper/93e4d326f6a322d66e034c1b88773f3a7f621526">Constrained K-Means Clustering</a>. Microsoft Research Dept. of Mathematical Sciences One Microsoft Way Dept. of Decision Sciences and Eng. Sys. 2000.  [<a
+href="../support/Ionosphere#93e4d326f6a322d66e034c1b88773f3a7f621526">View Context</a>].<br><br>Jennifer G. Dy and Carla Brodley. <a
+href="http://rexa.info/paper/b1a2a0423ea7baac76c75e758f784505eb8fc18f">Feature Subset Selection and Order Identification for Unsupervised Learning</a>. ICML. 2000.  [<a
+href="../support/Ionosphere#b1a2a0423ea7baac76c75e758f784505eb8fc18f">View Context</a>].<br><br>Art B. Owen. <a
+href="http://rexa.info/paper/319529c0338699404ff7d7f9d7e5c900e5294959">Tubular neighbors for regression and classification</a>. Stanford University. 1999.  [<a
+href="../support/Ionosphere#319529c0338699404ff7d7f9d7e5c900e5294959">View Context</a>].<br><br>Chun-Nan Hsu and Hilmar Schuschel and Ya-Ting Yang. <a
+href="http://rexa.info/paper/283e535d8f512eedabbd803c72a86b891eed8474">The ANNIGMA-Wrapper Approach to Neural Nets Feature Selection for Knowledge Discovery and Data Mining</a>. Institute of Information Science. 1999.  [<a
+href="../support/Ionosphere#283e535d8f512eedabbd803c72a86b891eed8474">View Context</a>].<br><br>Lorne Mason and Jonathan Baxter and Peter L. Bartlett and Marcus Frean. <a
+href="http://rexa.info/paper/f820b10d6723504d343c9741f7333fbc3393fd05">Boosting Algorithms as Gradient Descent</a>. NIPS. 1999.  [<a
+href="../support/Ionosphere#f820b10d6723504d343c9741f7333fbc3393fd05">View Context</a>].<br><br>Kai Ming Ting and Ian H. Witten. <a
+href="http://rexa.info/paper/70172e511a3bc27c7927119a3b2a3405fbad99e0">Issues in Stacked Generalization</a>. J. Artif. Intell. Res. (JAIR, 10. 1999.  [<a
+href="../support/Ionosphere#70172e511a3bc27c7927119a3b2a3405fbad99e0">View Context</a>].<br><br>Stephen D. Bay. <a
+href="http://rexa.info/paper/6c590e12408ebd3b9184e8f4634612e552a823e9">Nearest neighbor classification from multiple feature subsets</a>. Intell. Data Anal, 3. 1999.  [<a
+href="../support/Ionosphere#6c590e12408ebd3b9184e8f4634612e552a823e9">View Context</a>].<br><br>Stavros J. Perantonis and Vassilis Virvilis. <a
+href="http://rexa.info/paper/dc4f2babc5ca4534b435280aec32f5816ddb53b0">Input Feature Extraction for Multilayered Perceptrons Using Supervised Principal Component Analysis</a>. Neural Processing Letters, 10. 1999.  [<a
+href="../support/Ionosphere#dc4f2babc5ca4534b435280aec32f5816ddb53b0">View Context</a>].<br><br>David M J Tax and Robert P W Duin. <a
+href="http://rexa.info/paper/a6fa92d0caaa949b6ebd6531b2e6d4e7e0f03387">Support vector domain description</a>. Pattern Recognition Letters, 20. 1999.  [<a
+href="../support/Ionosphere#a6fa92d0caaa949b6ebd6531b2e6d4e7e0f03387">View Context</a>].<br><br>Robert E. Schapire and Yoav Freund and Peter Bartlett and Wee Sun Lee. <a
+href="http://rexa.info/paper/ca1479cb43feeda16386d2e50460bd2c1230bc8b">The Annals of Statistics, to appear. Boosting the Margin: A New Explanation for the Effectiveness of Voting Methods</a>. AT&T Labs. 1998.  [<a
+href="../support/Ionosphere#ca1479cb43feeda16386d2e50460bd2c1230bc8b">View Context</a>].<br><br>Lorne Mason and Peter L. Bartlett and Jonathan Baxter. <a
+href="http://rexa.info/paper/271b9c67f2a11a31962a436a41aaa5ed148dda6e">Direct Optimization of Margins Improves Generalization in Combined Classifiers</a>. NIPS. 1998.  [<a
+href="../support/Ionosphere#271b9c67f2a11a31962a436a41aaa5ed148dda6e">View Context</a>].<br><br>Richard Maclin. <a
+href="http://rexa.info/paper/93fcd9513832c5bf30d24120ab3bba1f9ec422b2">Boosting Classifiers Regionally</a>. AAAI/IAAI. 1998.  [<a
+href="../support/Ionosphere#93fcd9513832c5bf30d24120ab3bba1f9ec422b2">View Context</a>].<br><br>Kristin P. Bennett and Erin J. Bredensteiner. <a
+href="http://rexa.info/paper/63ebbe51c9c4dea76320f7b6a40f2a59f10cc7c0">A Parametric Optimization Method for Machine Learning</a>. INFORMS Journal on Computing, 9. 1997.  [<a
+href="../support/Ionosphere#63ebbe51c9c4dea76320f7b6a40f2a59f10cc7c0">View Context</a>].<br><br>Aynur Akkus and H. Altay GÃ¼venir. <a
+href="http://rexa.info/paper/10cb2e0135796333fda81f2d65da6be1e1ed9e06">K Nearest Neighbor Classification on Feature Projections</a>. ICML. 1996.  [<a
+href="../support/Ionosphere#10cb2e0135796333fda81f2d65da6be1e1ed9e06">View Context</a>].<br><br>Rajesh Parekh and Jihoon Yang and Vasant Honavar. <a
+href="http://rexa.info/paper/1570e3547e5d0131eee5b25f40359409b8d8c396">Constructive Neural-Network Learning Algorithms for Pattern Classification</a>.  [<a
+href="../support/Ionosphere#1570e3547e5d0131eee5b25f40359409b8d8c396">View Context</a>].<br><br>Alain Rakotomamonjy. <a
+href="http://rexa.info/paper/9f311a1b1421973488b673c39c8545ef006570cc">Leave-One-Out errors in Bipartite Ranking SVM</a>. PSI CNRS FRE2645 INSA de Rouen Avenue de l'universite.  [<a
+href="../support/Ionosphere#9f311a1b1421973488b673c39c8545ef006570cc">View Context</a>].<br><br>Wl/odzisl/aw Duch and Karol Grudzinski. <a
+href="http://rexa.info/paper/e100b0bcc229ac20bf69c9a7a6bcc360ea16a720">Meta-learning: searching in the model space</a>. Department of Computer Methods, Nicholas Copernicus University.  [<a
+href="../support/Ionosphere#e100b0bcc229ac20bf69c9a7a6bcc360ea16a720">View Context</a>].<br><br>Federico Divina and Elena Marchiori. <a
+href="http://rexa.info/paper/c5da3959b262c7f9f7d339d5a61d1af0ed0ee805">Knowledge-Based Evolutionary Search for Inductive Concept Learning</a>. Vrije Universiteit of Amsterdam.  [<a
+href="../support/Ionosphere#c5da3959b262c7f9f7d339d5a61d1af0ed0ee805">View Context</a>].<br><br>Charles Campbell and Nello Cristianini. <a
+href="http://rexa.info/paper/b6e169d69cd67763b95698e8961696fec9ca93bf">Simple Learning Algorithms for Training Support Vector Machines</a>. Dept. of Engineering Mathematics.  [<a
+href="../support/Ionosphere#b6e169d69cd67763b95698e8961696fec9ca93bf">View Context</a>].<br><br>K. A. J Doherty and Rolf Adams and Neil Davey. <a
+href="http://rexa.info/paper/716db199e5f006b8b564ef192177f08d5edefe9b">Unsupervised Learning with Normalised Data and Non-Euclidean Norms</a>. University of Hertfordshire.  [<a
+href="../support/Ionosphere#716db199e5f006b8b564ef192177f08d5edefe9b">View Context</a>].<br><br>Michael Lindenbaum and Shaul Markovitch and Dmitry Rusakov. <a
+href="http://rexa.info/paper/9a0080df56f0a8fb004723a7dece29109bc316ce">Selective Sampling Using Random Field Modelling</a>.  [<a
+href="../support/Ionosphere#9a0080df56f0a8fb004723a7dece29109bc316ce">View Context</a>].<br><br>Christos Emmanouilidis and Anthony Hunter. <a
+href="http://rexa.info/paper/fe52c7b7465f378427ac09aa5480dd559ff5f569">A Comparison of Crossover Operators in Neural Network Feature Selection with Multiobjective Evolutionary Algorithms</a>. Centre for Adaptive Systems, School of Computing, Engineering and Technology University of Sunderland.  [<a
+href="../support/Ionosphere#fe52c7b7465f378427ac09aa5480dd559ff5f569">View Context</a>].<br><br>Chiranjib Bhattacharyya and Pannagadatta K. S and Alexander J. Smola. <a
+href="http://rexa.info/paper/68ad36910e92ea5408b79e50302563fb79484cf4">A Second order Cone Programming Formulation for Classifying Missing Data</a>. Department of Computer Science and Automation Indian Institute of Science.  [<a
+href="../support/Ionosphere#68ad36910e92ea5408b79e50302563fb79484cf4">View Context</a>].<br><br>Perry Moerland. <a
+href="http://rexa.info/paper/43019420b94637b63ac4fc3f94f64abd11b64f0a">Mixtures of latent variable models for density estimation and classification</a>. E S E A R C H R E P R O R T I D I A P D a l l e M o l l e I n s t i t u t e f o r Pe r cep t ua l A r t i f i c i a l Intelligence .  [<a
+href="../support/Ionosphere#43019420b94637b63ac4fc3f94f64abd11b64f0a">View Context</a>].<br><br>Markus Breitenbach and Rodney Nielsen and Gregory Z. Grudic. <a
+href="http://rexa.info/paper/a81018cca22b93c0c71ff6e9983d38669daeb54e">Probabilistic Random Forests: Predicting Data Point Specific Misclassification Probabilities</a>. Department of Computer Science University of Colorado.  [<a
+href="../support/Ionosphere#a81018cca22b93c0c71ff6e9983d38669daeb54e">View Context</a>].<br><br>Federico Divina and Elena Marchiori. <a
+href="http://rexa.info/paper/954de642cab661d060a2dbc68d3023ba3a9763e1">Handling Continuous Attributes in an Evolutionary Inductive Learner</a>. Department of Computer Science Vrije Universiteit.  [<a
+href="../support/Ionosphere#954de642cab661d060a2dbc68d3023ba3a9763e1">View Context</a>].<br><br>Glenn Fung and Sathyakama Sandilya and R. Bharat Rao. <a
+href="http://rexa.info/paper/77b535b98a279e3b1ee9499bead3408bc8d58c08">Rule extraction from Linear Support Vector Machines</a>. Computer-Aided Diagnosis & Therapy, Siemens Medical Solutions, Inc.  [<a
+href="../support/Ionosphere#77b535b98a279e3b1ee9499bead3408bc8d58c08">View Context</a>].<br><br>Karthik Ramakrishnan. <a
+href="http://rexa.info/paper/e4ce48114dcd770134f22df787d55e8daf02ac4a">UNIVERSITY OF MINNESOTA</a>.  [<a
+href="../support/Ionosphere#e4ce48114dcd770134f22df787d55e8daf02ac4a">View Context</a>].<br><br>Michalis K. Titsias and Aristidis Likas. <a
+href="http://rexa.info/paper/d26e510dd613f1f7821b5f6c4e9fe5868aa5f006">Shared Kernel Models for Class Conditional Density Estimation</a>.  [<a
+href="../support/Ionosphere#d26e510dd613f1f7821b5f6c4e9fe5868aa5f006">View Context</a>].<br><br>Alexander K. Seewald. <a
+href="http://rexa.info/paper/e2b2b723df700c90e69a31a4403b740c2d2a7b2f">Dissertation Towards Understanding Stacking Studies of a General Ensemble Learning Scheme ausgefuhrt zum Zwecke der Erlangung des akademischen Grades eines Doktors der technischen Naturwissenschaften</a>.  [<a
+href="../support/Ionosphere#e2b2b723df700c90e69a31a4403b740c2d2a7b2f">View Context</a>].<br><br>Wl/odzisl/aw Duch and Karol Grudzinski and Geerd H. F Diercksen. <a
+href="http://rexa.info/paper/0f1456aba1cd88fe698ef134fa761a3ee2fc03f2">Minimal distance neural methods</a>. Department of Computer Methods, Nicholas Copernicus University.  [<a
+href="../support/Ionosphere#0f1456aba1cd88fe698ef134fa761a3ee2fc03f2">View Context</a>].<br><br>Andrew Watkins and Jon Timmis and Lois C. Boggess. <a
+href="http://rexa.info/paper/b4b7ea88c807c5c8746bf3067f13b1d07899bcc9">Artificial Immune Recognition System (AIRS): An ImmuneInspired Supervised Learning Algorithm</a>. (abw5,jt6@kent.ac.uk) Computing Laboratory, University of Kent.  [<a
+href="../support/Ionosphere#b4b7ea88c807c5c8746bf3067f13b1d07899bcc9">View Context</a>].<br><br>Aynur Akku and H. Altay Guvenir. <a
+href="http://rexa.info/paper/945d8ba4c7eacfaed696aaf0bd72fd576efa78d5">Weighting Features in k Nearest Neighbor Classification on Feature Projections</a>. Department of Computer Engineering and Information Science Bilkent University.  [<a
+href="../support/Ionosphere#945d8ba4c7eacfaed696aaf0bd72fd576efa78d5">View Context</a>].<br><br>Krzysztof Grabczewski and Wl/odzisl/aw Duch. <a
+href="http://rexa.info/paper/2b9850dda87431cc9117f2a0a63d79863723e4b0">THE SEPARABILITY OF SPLIT VALUE CRITERION</a>. Department of Computer Methods, Nicolaus Copernicus University.  [<a
+href="../support/Ionosphere#2b9850dda87431cc9117f2a0a63d79863723e4b0">View Context</a>].<br><br>Christos Emmanouilidis and A. Hunter and Dr J. MacIntyre. <a
+href="http://rexa.info/paper/b859b5cc14ac44c92ce02385f20204fdf9e32714">A Multiobjective Evolutionary Setting for Feature Selection and a Commonality-Based Crossover Operator</a>. Centre for Adaptive Systems, School of Computing, Engineering and Technology University of Sunderland.  [<a
+href="../support/Ionosphere#b859b5cc14ac44c92ce02385f20204fdf9e32714">View Context</a>].<br><br>Chiranjib Bhattacharyya. <a
+href="http://rexa.info/paper/ab6823c2bce78649401e56bfb2d46bb279535879">Robust Classification of noisy data using Second Order Cone Programming approach</a>. Dept. Computer Science and Automation, Indian Institute of Science.  [<a
+href="../support/Ionosphere#ab6823c2bce78649401e56bfb2d46bb279535879">View Context</a>].<br><br>Ayhan Demiriz and Kristin P. Bennett. <a
+href="http://rexa.info/paper/36d1c58be0e3c0c1d57492d050d8a71a04a72858">Chapter 1 OPTIMIZATIONAPPROACHESTOSEMI-SUPERVISED LEARNING</a>. Department of Decision Sciences and Engineering Systems & Department of Mathematical Sciences, Rensselaer Polytechnic Institute.  [<a
+href="../support/Ionosphere#36d1c58be0e3c0c1d57492d050d8a71a04a72858">View Context</a>].<br><br>Isabelle Alvarez and Stephan Bernard. <a
+href="http://rexa.info/paper/d024a37a0324a4e5218f79ec65fd33e4cff7825e">Ranking Cases with Decision Trees: a Geometric Method that Preserves Intelligibility</a>.  [<a
+href="../support/Ionosphere#d024a37a0324a4e5218f79ec65fd33e4cff7825e">View Context</a>].<br><br>Christos Dimitrakakis and Samy Bengioy. <a
+href="http://rexa.info/paper/3cb3fbd5512e3cd12111b598fece53fcb42c484b">Online Policy Adaptation for Ensemble Classifiers</a>. IDIAP.  [<a
+href="../support/Ionosphere#3cb3fbd5512e3cd12111b598fece53fcb42c484b">View Context</a>].<br><br></p>
+
+-->
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg"><p class="normal">Zhi-Hua Zhou and Yuan Jiang. <a href="http://rexa.info/paper/e6315f170eea3cc52ade688d0abb40f3372ec35d">NeC4.5: Neural Ensemble Based C4.5</a>. IEEE Trans. Knowl. Data Eng, 16. 2004.  [<a href="../support/Ionosphere#e6315f170eea3cc52ade688d0abb40f3372ec35d">View Context</a>].<br><br>Hyunsoo Kim and Se Hyun Park. <a href="http://rexa.info/paper/66e4adde5454a4c13960687a350b7bd2b12859db">Data Reduction in Support Vector Machines by a Kernelized Ionic Interaction Model</a>. SDM. 2004.  [<a href="../support/Ionosphere#66e4adde5454a4c13960687a350b7bd2b12859db">View Context</a>].<br><br>Glenn Fung and M. Murat Dundar and Jinbo Bi and Bharat Rao. <a href="http://rexa.info/paper/49b5aef7a515640b1dde8f9f777d5a1f0c014022">A fast iterative algorithm for fisher discriminant using heterogeneous kernels</a>. ICML. 2004.  [<a href="../support/Ionosphere#49b5aef7a515640b1dde8f9f777d5a1f0c014022">View Context</a>].<br><br>Predrag Radivojac and Zoran Obradovic and A. Keith Dunker and Slobodan Vucetic. <a href="http://rexa.info/paper/45391c9343dc03f6033eba55364366eddbb693db">Feature Selection Filters Based on the Permutation Test</a>. ECML. 2004.  [<a href="../support/Ionosphere#45391c9343dc03f6033eba55364366eddbb693db">View Context</a>].<br><br>Jeroen Eggermont and Joost N. Kok and Walter A. Kosters. <a href="http://rexa.info/paper/d64d2705cabed449e8cb2ecc3c3c77c54ee71051">Genetic Programming for data classification: partitioning the search space</a>. SAC. 2004.  [<a href="../support/Ionosphere#d64d2705cabed449e8cb2ecc3c3c77c54ee71051">View Context</a>].<br><br>Jennifer G. Dy and Carla Brodley. <a href="http://rexa.info/paper/5b3417aa2824988405f9ac934b692af30729b447">Feature Selection for Unsupervised Learning</a>. Journal of Machine Learning Research, 5. 2004.  [<a href="../support/Ionosphere#5b3417aa2824988405f9ac934b692af30729b447">View Context</a>].<br><br>Mikhail Bilenko and Sugato Basu and Raymond J. Mooney. <a href="http://rexa.info/paper/a3fca86cb1f854c7fd7975e66aae2a5ba3710f8a">Integrating constraints and metric learning in semi-supervised clustering</a>. ICML. 2004.  [<a href="../support/Ionosphere#a3fca86cb1f854c7fd7975e66aae2a5ba3710f8a">View Context</a>].<br><br>Dmitriy Fradkin and David Madigan. <a href="http://rexa.info/paper/1ddaa5b4eba8093faad88a5426ec586c6ac63f6e">Experiments with random projections for machine learning</a>. KDD. 2003.  [<a href="../support/Ionosphere#1ddaa5b4eba8093faad88a5426ec586c6ac63f6e">View Context</a>].<br><br>Michael L. Raymer and Travis E. Doom and Leslie A. Kuhn and William F. Punch. <a href="http://rexa.info/paper/076c5b4e7bf69148bcde8c83621ecf1140a7d55c">Knowledge discovery in medical and biological datasets using a hybrid Bayes classifier/evolutionary algorithm</a>. IEEE Transactions on Systems, Man, and Cybernetics, Part B, 33. 2003.  [<a href="../support/Ionosphere#076c5b4e7bf69148bcde8c83621ecf1140a7d55c">View Context</a>].<br><br>Marina Skurichina and Ludmila Kuncheva and Robert P W Duin. <a href="http://rexa.info/paper/d8bc3a2d334e33553c2c7e052ce8c2fd9ae5718b">Bagging and Boosting for the Nearest Mean Classifier: Effects of Sample Size on Diversity and Accuracy</a>. Multiple Classifier Systems. 2002.  [<a href="../support/Ionosphere#d8bc3a2d334e33553c2c7e052ce8c2fd9ae5718b">View Context</a>].<br><br>Robert Burbidge and Matthew Trotter and Bernard F. Buxton and Sean B. Holden. <a href="http://rexa.info/paper/c185d513badef2336ca48f64098d4b5df17bf5a4">STAR - Sparsity through Automated Rejection</a>. IWANN (1). 2001.  [<a href="../support/Ionosphere#c185d513badef2336ca48f64098d4b5df17bf5a4">View Context</a>].<br><br>P. S and Bradley K. P and Bennett A. Demiriz. <a href="http://rexa.info/paper/d254374dd5eab5d871c8010dcbe4ac84ec86ea8c">Constrained K-Means Clustering</a>. Microsoft Research Dept. of Mathematical Sciences One Microsoft Way Dept. of Decision Sciences and Eng. Sys. 2000.  [<a href="../support/Ionosphere#d254374dd5eab5d871c8010dcbe4ac84ec86ea8c">View Context</a>].<br><br>Juan J. Rodr##guez and Carlos J. Alonso and Henrik Bostrom. <a href="http://rexa.info/paper/179e206cfdc14b74819ce95f39bb68610874578b">Boosting Interval Based Literals</a>. 2000.  [<a href="../support/Ionosphere#179e206cfdc14b74819ce95f39bb68610874578b">View Context</a>].<br><br>Colin Campbell and Nello Cristianini and Alex J. Smola. <a href="http://rexa.info/paper/492fa3ac5e4f32e8d4bb1be1225c4fcf8739a553">Query Learning with Large Margin Classifiers</a>. ICML. 2000.  [<a href="../support/Ionosphere#492fa3ac5e4f32e8d4bb1be1225c4fcf8739a553">View Context</a>].<br><br>Marina Skurichina and Robert P W Duin. <a href="http://rexa.info/paper/0b088e37f14f4bd30ad6c550b543306c6363eaa7">Boosting in Linear Discriminant Analysis</a>. Multiple Classifier Systems. 2000.  [<a href="../support/Ionosphere#0b088e37f14f4bd30ad6c550b543306c6363eaa7">View Context</a>].<br><br>Lorne Mason and Peter L. Bartlett and Jonathan Baxter. <a href="http://rexa.info/paper/63e63c88edc486c3b1b2aeebb790f88a119536c9">Improved Generalization Through Explicit Optimization of Margins</a>. Machine Learning, 38. 2000.  [<a href="../support/Ionosphere#63e63c88edc486c3b1b2aeebb790f88a119536c9">View Context</a>].<br><br>Justin Bradley and Kristin P. Bennett and Bennett A. Demiriz. <a href="http://rexa.info/paper/93e4d326f6a322d66e034c1b88773f3a7f621526">Constrained K-Means Clustering</a>. Microsoft Research Dept. of Mathematical Sciences One Microsoft Way Dept. of Decision Sciences and Eng. Sys. 2000.  [<a href="../support/Ionosphere#93e4d326f6a322d66e034c1b88773f3a7f621526">View Context</a>].<br><br>Jennifer G. Dy and Carla Brodley. <a href="http://rexa.info/paper/b1a2a0423ea7baac76c75e758f784505eb8fc18f">Feature Subset Selection and Order Identification for Unsupervised Learning</a>. ICML. 2000.  [<a href="../support/Ionosphere#b1a2a0423ea7baac76c75e758f784505eb8fc18f">View Context</a>].<br><br>Art B. Owen. <a href="http://rexa.info/paper/319529c0338699404ff7d7f9d7e5c900e5294959">Tubular neighbors for regression and classification</a>. Stanford University. 1999.  [<a href="../support/Ionosphere#319529c0338699404ff7d7f9d7e5c900e5294959">View Context</a>].<br><br>Chun-Nan Hsu and Hilmar Schuschel and Ya-Ting Yang. <a href="http://rexa.info/paper/283e535d8f512eedabbd803c72a86b891eed8474">The ANNIGMA-Wrapper Approach to Neural Nets Feature Selection for Knowledge Discovery and Data Mining</a>. Institute of Information Science. 1999.  [<a href="../support/Ionosphere#283e535d8f512eedabbd803c72a86b891eed8474">View Context</a>].<br><br>Lorne Mason and Jonathan Baxter and Peter L. Bartlett and Marcus Frean. <a href="http://rexa.info/paper/f820b10d6723504d343c9741f7333fbc3393fd05">Boosting Algorithms as Gradient Descent</a>. NIPS. 1999.  [<a href="../support/Ionosphere#f820b10d6723504d343c9741f7333fbc3393fd05">View Context</a>].<br><br>Kai Ming Ting and Ian H. Witten. <a href="http://rexa.info/paper/70172e511a3bc27c7927119a3b2a3405fbad99e0">Issues in Stacked Generalization</a>. J. Artif. Intell. Res. (JAIR, 10. 1999.  [<a href="../support/Ionosphere#70172e511a3bc27c7927119a3b2a3405fbad99e0">View Context</a>].<br><br>Stephen D. Bay. <a href="http://rexa.info/paper/6c590e12408ebd3b9184e8f4634612e552a823e9">Nearest neighbor classification from multiple feature subsets</a>. Intell. Data Anal, 3. 1999.  [<a href="../support/Ionosphere#6c590e12408ebd3b9184e8f4634612e552a823e9">View Context</a>].<br><br>Stavros J. Perantonis and Vassilis Virvilis. <a href="http://rexa.info/paper/dc4f2babc5ca4534b435280aec32f5816ddb53b0">Input Feature Extraction for Multilayered Perceptrons Using Supervised Principal Component Analysis</a>. Neural Processing Letters, 10. 1999.  [<a href="../support/Ionosphere#dc4f2babc5ca4534b435280aec32f5816ddb53b0">View Context</a>].<br><br>David M J Tax and Robert P W Duin. <a href="http://rexa.info/paper/a6fa92d0caaa949b6ebd6531b2e6d4e7e0f03387">Support vector domain description</a>. Pattern Recognition Letters, 20. 1999.  [<a href="../support/Ionosphere#a6fa92d0caaa949b6ebd6531b2e6d4e7e0f03387">View Context</a>].<br><br>Robert E. Schapire and Yoav Freund and Peter Bartlett and Wee Sun Lee. <a href="http://rexa.info/paper/ca1479cb43feeda16386d2e50460bd2c1230bc8b">The Annals of Statistics, to appear. Boosting the Margin: A New Explanation for the Effectiveness of Voting Methods</a>. AT&amp;T Labs. 1998.  [<a href="../support/Ionosphere#ca1479cb43feeda16386d2e50460bd2c1230bc8b">View Context</a>].<br><br>Lorne Mason and Peter L. Bartlett and Jonathan Baxter. <a href="http://rexa.info/paper/271b9c67f2a11a31962a436a41aaa5ed148dda6e">Direct Optimization of Margins Improves Generalization in Combined Classifiers</a>. NIPS. 1998.  [<a href="../support/Ionosphere#271b9c67f2a11a31962a436a41aaa5ed148dda6e">View Context</a>].<br><br>Richard Maclin. <a href="http://rexa.info/paper/93fcd9513832c5bf30d24120ab3bba1f9ec422b2">Boosting Classifiers Regionally</a>. AAAI/IAAI. 1998.  [<a href="../support/Ionosphere#93fcd9513832c5bf30d24120ab3bba1f9ec422b2">View Context</a>].<br><br>Kristin P. Bennett and Erin J. Bredensteiner. <a href="http://rexa.info/paper/63ebbe51c9c4dea76320f7b6a40f2a59f10cc7c0">A Parametric Optimization Method for Machine Learning</a>. INFORMS Journal on Computing, 9. 1997.  [<a href="../support/Ionosphere#63ebbe51c9c4dea76320f7b6a40f2a59f10cc7c0">View Context</a>].<br><br>Aynur Akkus and H. Altay GÃ¼venir. <a href="http://rexa.info/paper/10cb2e0135796333fda81f2d65da6be1e1ed9e06">K Nearest Neighbor Classification on Feature Projections</a>. ICML. 1996.  [<a href="../support/Ionosphere#10cb2e0135796333fda81f2d65da6be1e1ed9e06">View Context</a>].<br><br>Rajesh Parekh and Jihoon Yang and Vasant Honavar. <a href="http://rexa.info/paper/1570e3547e5d0131eee5b25f40359409b8d8c396">Constructive Neural-Network Learning Algorithms for Pattern Classification</a>.  [<a href="../support/Ionosphere#1570e3547e5d0131eee5b25f40359409b8d8c396">View Context</a>].<br><br>Alain Rakotomamonjy. <a href="http://rexa.info/paper/9f311a1b1421973488b673c39c8545ef006570cc">Leave-One-Out errors in Bipartite Ranking SVM</a>. PSI CNRS FRE2645 INSA de Rouen Avenue de l'universite.  [<a href="../support/Ionosphere#9f311a1b1421973488b673c39c8545ef006570cc">View Context</a>].<br><br>Wl/odzisl/aw Duch and Karol Grudzinski. <a href="http://rexa.info/paper/e100b0bcc229ac20bf69c9a7a6bcc360ea16a720">Meta-learning: searching in the model space</a>. Department of Computer Methods, Nicholas Copernicus University.  [<a href="../support/Ionosphere#e100b0bcc229ac20bf69c9a7a6bcc360ea16a720">View Context</a>].<br><br>Federico Divina and Elena Marchiori. <a href="http://rexa.info/paper/c5da3959b262c7f9f7d339d5a61d1af0ed0ee805">Knowledge-Based Evolutionary Search for Inductive Concept Learning</a>. Vrije Universiteit of Amsterdam.  [<a href="../support/Ionosphere#c5da3959b262c7f9f7d339d5a61d1af0ed0ee805">View Context</a>].<br><br>Charles Campbell and Nello Cristianini. <a href="http://rexa.info/paper/b6e169d69cd67763b95698e8961696fec9ca93bf">Simple Learning Algorithms for Training Support Vector Machines</a>. Dept. of Engineering Mathematics.  [<a href="../support/Ionosphere#b6e169d69cd67763b95698e8961696fec9ca93bf">View Context</a>].<br><br>K. A. J Doherty and Rolf Adams and Neil Davey. <a href="http://rexa.info/paper/716db199e5f006b8b564ef192177f08d5edefe9b">Unsupervised Learning with Normalised Data and Non-Euclidean Norms</a>. University of Hertfordshire.  [<a href="../support/Ionosphere#716db199e5f006b8b564ef192177f08d5edefe9b">View Context</a>].<br><br>Michael Lindenbaum and Shaul Markovitch and Dmitry Rusakov. <a href="http://rexa.info/paper/9a0080df56f0a8fb004723a7dece29109bc316ce">Selective Sampling Using Random Field Modelling</a>.  [<a href="../support/Ionosphere#9a0080df56f0a8fb004723a7dece29109bc316ce">View Context</a>].<br><br>Christos Emmanouilidis and Anthony Hunter. <a href="http://rexa.info/paper/fe52c7b7465f378427ac09aa5480dd559ff5f569">A Comparison of Crossover Operators in Neural Network Feature Selection with Multiobjective Evolutionary Algorithms</a>. Centre for Adaptive Systems, School of Computing, Engineering and Technology University of Sunderland.  [<a href="../support/Ionosphere#fe52c7b7465f378427ac09aa5480dd559ff5f569">View Context</a>].<br><br>Chiranjib Bhattacharyya and Pannagadatta K. S and Alexander J. Smola. <a href="http://rexa.info/paper/68ad36910e92ea5408b79e50302563fb79484cf4">A Second order Cone Programming Formulation for Classifying Missing Data</a>. Department of Computer Science and Automation Indian Institute of Science.  [<a href="../support/Ionosphere#68ad36910e92ea5408b79e50302563fb79484cf4">View Context</a>].<br><br>Perry Moerland. <a href="http://rexa.info/paper/43019420b94637b63ac4fc3f94f64abd11b64f0a">Mixtures of latent variable models for density estimation and classification</a>. E S E A R C H R E P R O R T I D I A P D a l l e M o l l e I n s t i t u t e f o r Pe r cep t ua l A r t i f i c i a l Intelligence .  [<a href="../support/Ionosphere#43019420b94637b63ac4fc3f94f64abd11b64f0a">View Context</a>].<br><br>Markus Breitenbach and Rodney Nielsen and Gregory Z. Grudic. <a href="http://rexa.info/paper/a81018cca22b93c0c71ff6e9983d38669daeb54e">Probabilistic Random Forests: Predicting Data Point Specific Misclassification Probabilities</a>. Department of Computer Science University of Colorado.  [<a href="../support/Ionosphere#a81018cca22b93c0c71ff6e9983d38669daeb54e">View Context</a>].<br><br>Federico Divina and Elena Marchiori. <a href="http://rexa.info/paper/954de642cab661d060a2dbc68d3023ba3a9763e1">Handling Continuous Attributes in an Evolutionary Inductive Learner</a>. Department of Computer Science Vrije Universiteit.  [<a href="../support/Ionosphere#954de642cab661d060a2dbc68d3023ba3a9763e1">View Context</a>].<br><br>Glenn Fung and Sathyakama Sandilya and R. Bharat Rao. <a href="http://rexa.info/paper/77b535b98a279e3b1ee9499bead3408bc8d58c08">Rule extraction from Linear Support Vector Machines</a>. Computer-Aided Diagnosis &amp; Therapy, Siemens Medical Solutions, Inc.  [<a href="../support/Ionosphere#77b535b98a279e3b1ee9499bead3408bc8d58c08">View Context</a>].<br><br>Karthik Ramakrishnan. <a href="http://rexa.info/paper/e4ce48114dcd770134f22df787d55e8daf02ac4a">UNIVERSITY OF MINNESOTA</a>.  [<a href="../support/Ionosphere#e4ce48114dcd770134f22df787d55e8daf02ac4a">View Context</a>].<br><br>Michalis K. Titsias and Aristidis Likas. <a href="http://rexa.info/paper/d26e510dd613f1f7821b5f6c4e9fe5868aa5f006">Shared Kernel Models for Class Conditional Density Estimation</a>.  [<a href="../support/Ionosphere#d26e510dd613f1f7821b5f6c4e9fe5868aa5f006">View Context</a>].<br><br>Alexander K. Seewald. <a href="http://rexa.info/paper/e2b2b723df700c90e69a31a4403b740c2d2a7b2f">Dissertation Towards Understanding Stacking Studies of a General Ensemble Learning Scheme ausgefuhrt zum Zwecke der Erlangung des akademischen Grades eines Doktors der technischen Naturwissenschaften</a>.  [<a href="../support/Ionosphere#e2b2b723df700c90e69a31a4403b740c2d2a7b2f">View Context</a>].<br><br>Wl/odzisl/aw Duch and Karol Grudzinski and Geerd H. F Diercksen. <a href="http://rexa.info/paper/0f1456aba1cd88fe698ef134fa761a3ee2fc03f2">Minimal distance neural methods</a>. Department of Computer Methods, Nicholas Copernicus University.  [<a href="../support/Ionosphere#0f1456aba1cd88fe698ef134fa761a3ee2fc03f2">View Context</a>].<br><br>Andrew Watkins and Jon Timmis and Lois C. Boggess. <a href="http://rexa.info/paper/b4b7ea88c807c5c8746bf3067f13b1d07899bcc9">Artificial Immune Recognition System (AIRS): An ImmuneInspired Supervised Learning Algorithm</a>. (abw5,jt6@kent.ac.uk) Computing Laboratory, University of Kent.  [<a href="../support/Ionosphere#b4b7ea88c807c5c8746bf3067f13b1d07899bcc9">View Context</a>].<br><br>Aynur Akku and H. Altay Guvenir. <a href="http://rexa.info/paper/945d8ba4c7eacfaed696aaf0bd72fd576efa78d5">Weighting Features in k Nearest Neighbor Classification on Feature Projections</a>. Department of Computer Engineering and Information Science Bilkent University.  [<a href="../support/Ionosphere#945d8ba4c7eacfaed696aaf0bd72fd576efa78d5">View Context</a>].<br><br>Krzysztof Grabczewski and Wl/odzisl/aw Duch. <a href="http://rexa.info/paper/2b9850dda87431cc9117f2a0a63d79863723e4b0">THE SEPARABILITY OF SPLIT VALUE CRITERION</a>. Department of Computer Methods, Nicolaus Copernicus University.  [<a href="../support/Ionosphere#2b9850dda87431cc9117f2a0a63d79863723e4b0">View Context</a>].<br><br>Christos Emmanouilidis and A. Hunter and Dr J. MacIntyre. <a href="http://rexa.info/paper/b859b5cc14ac44c92ce02385f20204fdf9e32714">A Multiobjective Evolutionary Setting for Feature Selection and a Commonality-Based Crossover Operator</a>. Centre for Adaptive Systems, School of Computing, Engineering and Technology University of Sunderland.  [<a href="../support/Ionosphere#b859b5cc14ac44c92ce02385f20204fdf9e32714">View Context</a>].<br><br>Chiranjib Bhattacharyya. <a href="http://rexa.info/paper/ab6823c2bce78649401e56bfb2d46bb279535879">Robust Classification of noisy data using Second Order Cone Programming approach</a>. Dept. Computer Science and Automation, Indian Institute of Science.  [<a href="../support/Ionosphere#ab6823c2bce78649401e56bfb2d46bb279535879">View Context</a>].<br><br>Ayhan Demiriz and Kristin P. Bennett. <a href="http://rexa.info/paper/36d1c58be0e3c0c1d57492d050d8a71a04a72858">Chapter 1 OPTIMIZATIONAPPROACHESTOSEMI-SUPERVISED LEARNING</a>. Department of Decision Sciences and Engineering Systems &amp; Department of Mathematical Sciences, Rensselaer Polytechnic Institute.  [<a href="../support/Ionosphere#36d1c58be0e3c0c1d57492d050d8a71a04a72858">View Context</a>].<br><br>Isabelle Alvarez and Stephan Bernard. <a href="http://rexa.info/paper/d024a37a0324a4e5218f79ec65fd33e4cff7825e">Ranking Cases with Decision Trees: a Geometric Method that Preserves Intelligibility</a>.  [<a href="../support/Ionosphere#d024a37a0324a4e5218f79ec65fd33e4cff7825e">View Context</a>].<br><br>Christos Dimitrakakis and Samy Bengioy. <a href="http://rexa.info/paper/3cb3fbd5512e3cd12111b598fece53fcb42c484b">Online Policy Adaptation for Ensemble Classifiers</a>. IDIAP.  [<a href="../support/Ionosphere#3cb3fbd5512e3cd12111b598fece53fcb42c484b">View Context</a>].<br><br></p>
+
+<br>
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please refer to the Machine Learning
+Repository's <a href="../citation_policy.html">citation policy</a></p>
+
+</td></tr></tbody></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+<p class="normal"><font size="1">[1] Papers were automatically harvested and associated with this data set, in collaboration
+with <a href="http://rexa.info"><font size="1">Rexa.info</font></a></font></p>
+
+<table cellpadding="5" align="center"><tbody><tr valign="center">
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height="60"> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg"></td>
+</tr></tbody></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+
+
+</body></html>§$).Ô_WebResourceResponse_application/x-httpd-phpO0bplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯ '-.4567QRSTUVWXYZ[\]^_`abcdeijU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_+http://archive.ics.uci.edu/ml/assets/ml.cssÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÃ3²z ÈÓ89:EPWNS.keysZNS.objectsª;<=>?@ABCD€	€
+€€€€€€€€ªFGHIJKLMNO€€€€€€€€€€€VServer\Content-TypeTEtag]Last-ModifiedX__hhaa__]Accept-RangesTDate^Content-LengthZKeep-AliveZConnection_jApache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips SVN/1.7.14 Phusion_Passenger/4.0.53 mod_perl/2.0.11 Perl/v5.16.3_application/x-httpd-php_"3e2-461e5a4f88c80"_Mon, 02 Feb 2009 01:40:50 GMT_”
+
+YnBsaXN0MDDZAQIDBAUGBwgJCgwOEBIUFhgaVlNlcnZlclxDb250ZW50LVR5cGVaQ29ubmVjdGlvbl1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFpLZWVwLUFsaXZlVEV0YWehC18QakFwYWNoZS8yLjQuNiAoQ2VudE9TKSBPcGVuU1NMLzEuMC4yay1maXBzIFNWTi8xLjcuMTQgUGh1c2lvbl9QYXNzZW5nZXIvNC4wLjUzIG1vZF9wZXJsLzIuMC4xMSBQZXJsL3Y1LjE2LjOhDV8QF2FwcGxpY2F0aW9uL3gtaHR0cGQtcGhwoQ9aS2VlcC1BbGl2ZaERXxAdTW9uLCAwMiBGZWIgMjAwOSAwMTo0MDo1MCBHTVShE1VieXRlc6EVXxAdVHVlLCAwMSBKdW4gMjAyMSAwODoyMDoyNSBHTVShF1M5OTShGV8QEnRpbWVvdXQ9NSwgbWF4PTEwMKEbXxATIjNlMi00NjFlNWE0Zjg4YzgwIgAIABsAIgAvADoASABWAFsAagB1AHoAfADpAOsBBQEHARIBFAE0ATYBPAE+AV4BYAFkAWYBewF9AAAAAAAAAgEAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAZM=Ubytes_Tue, 01 Jun 2021 08:20:25 GMTS994_timeout=5, max=100ZKeep-AliveÒ/0fg_NSMutableDictionary£fh3\NSDictionary_application/x-httpd-phpÒ/0kl_NSHTTPURLResponse£mn3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‡  ¨ Ê ì ï6=_be‡©¬®°²´¶¸º¼½¿ÁÃÅÌÔàâäæ$-36?HJLS[fqsuwy{}ƒ…’”–˜šœ ¢¤¦­º¿ÍÖäéø{•«Ëci‰¢­²ÈÌÙóø$             o              2_+http://archive.ics.uci.edu/ml/assets/ml.cssOâtextarea { 
+	width: 95%; 
+	text-align: left; 
+	height: 49;
+}
+.whitetext, .whitetext a, .whitetext a:visited {
+	color:#FFFFFF;
+	font-size:10pt;
+	font-family: Arial, Helvetica, sans-serif; 
+}
+.normal, .normal a, .normal a:visited  {
+	font-size:10pt;
+	font-family: Arial, Helvetica, sans-serif; 
+	color:#123654;
+}
+.heading, .heading a, .heading a:visited 
+{
+	font-size:20pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#123654;
+}
+.small-heading, .small-heading a, .small-heading a:visited {
+	font-size:12pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#123654;
+
+}
+
+.big, .big a, .big a:visited {
+	font-size:14pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#123654;
+
+}
+
+.almostbig, .almostbig a, .almostbig a:visited {
+	font-size:12pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#123654;
+
+}
+
+.bigwhite, .bigwhite a, .bigwhite a:visited {
+	font-size:14pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+}
+
+
+Ô_application/x-httpd-phpO8bplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯ '-.4567QRSTUVWXYZ[\]^_`abcdeijU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_-http://archive.ics.uci.edu/ml/assets/logo.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÃ3²E ÈÓ89:EPWNS.keysZNS.objectsª;<=>?@ABCD€	€
+€€€€€€€€ªFGHIJKLMNO€€€€€€€€€€€VServer\Content-TypeTEtag]Last-ModifiedX__hhaa__]Accept-RangesTDate^Content-LengthZKeep-AliveZConnection_jApache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips SVN/1.7.14 Phusion_Passenger/4.0.53 mod_perl/2.0.11 Perl/v5.16.3_application/x-httpd-php_"2109-439e3fe33a700"_Tue, 11 Sep 2007 22:54:52 GMT_˜
+
+YnBsaXN0MDDZAQIDBAUGBwgJCgwOEBIUFhgaVlNlcnZlclxDb250ZW50LVR5cGVaQ29ubmVjdGlvbl1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFpLZWVwLUFsaXZlVEV0YWehC18QakFwYWNoZS8yLjQuNiAoQ2VudE9TKSBPcGVuU1NMLzEuMC4yay1maXBzIFNWTi8xLjcuMTQgUGh1c2lvbl9QYXNzZW5nZXIvNC4wLjUzIG1vZF9wZXJsLzIuMC4xMSBQZXJsL3Y1LjE2LjOhDV8QF2FwcGxpY2F0aW9uL3gtaHR0cGQtcGhwoQ9aS2VlcC1BbGl2ZaERXxAdVHVlLCAxMSBTZXAgMjAwNyAyMjo1NDo1MiBHTVShE1VieXRlc6EVXxAdVHVlLCAwMSBKdW4gMjAyMSAwODoyMDoyNiBHTVShF1Q4NDU3oRlfEBJ0aW1lb3V0PTUsIG1heD0xMDChG18QFCIyMTA5LTQzOWUzZmUzM2E3MDAiAAgAGwAiAC8AOgBIAFYAWwBqAHUAegB8AOkA6wEFAQcBEgEUATQBNgE8AT4BXgFgAWUBZwF8AX4AAAAAAAACAQAAAAAAAAAcAAAAAAAAAAAAAAAAAAABlQ==Ubytes_Tue, 01 Jun 2021 08:20:26 GMTT8457_timeout=5, max=100ZKeep-AliveÒ/0fg_NSMutableDictionary£fh3\NSDictionary_application/x-httpd-phpÒ/0kl_NSHTTPURLResponse£mn3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‡  ¨ Ê ì ï6=_be‡©¬®°²´¶¸º¼½¿ÁÃÅÌÔàâäæ&/58AJLNU]hsuwy{}ƒ…‡’”–˜šœ ¢¤¦¨¯¼ÁÏØæëú}—®Îjp•ªµºĞÔáû ,             o              :_-http://archive.ics.uci.edu/ml/assets/logo.gifO!	GIF89a€| ÷  ÿÿÿ÷÷øööÿñõõíïıïï÷ïïéîîïååôææîääæáàïŞŞæİİßÖÖñ×ÕåÖÖßÑÕŞÔÔØÎÎßÌÌÌÿÌ ÆÆÕÇÆÜÄÄÌòÅ½¾ÕñÂ¾¾Ä½½Îå¾(µ¶ÍµµÆ®µÆ×¶9àµ­­Ç­­¾Ì¯H«ª¯Ğ¬¥¥¼¦¤Ã¿¦TÎ§¥£µšµ››¾šœ­¯œ`¼•–µ™—¦¹—#””­¤“hª“%ŒŒµŒŒ­ŒŒ¥«*–‰qŠˆ„…¤ƒƒ¬„„œi‡¥Št™€3’‚1{}œz{¤t}”‰€2{{•‚y7ttœ{txrr”ku‹ˆs<ys<kk‹ojzff™jkAdd…bc‹Xbƒa^x[[\aGZZƒQZeXMRT…O[LHZLRRzISzPQsLLDSQKK{SKVKJsGGkCC{BBr+JWCBe/GYAAi5?i;;s%B[::j>_33f22n;a<`00Z)/c5d5e))d**Y4f3f 3f##b"!Z  RZQJCTJ=		JBB ;  3 )                                                                                                                                                                                                                                                                                                                                      !ù ÿ ,    €|  ÿ 	H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8sêÜÉ³§H!@ƒ
+J´¨Ñ£H“*]Ê´©Ó§P£JJµªÕ«X«* «×¯`ÃŠK¶¬Ù³hÓª]Ë¶­Û·pãÊK·.\![íêİË·¯ß¿€üoB®„+^Ì¸±ãÇ‰#D¹²åË˜3k¶+ù åÍ C‹MZpgƒŸK«^Í:‰;”L™’åŠ$(Àúòé‚©{nY”C†Z´ˆ”+b¸\¹âdG‰Wü›`ğíàÃÛÿ…ğ!#ZÄˆIcÇ7nìœQ „*fì"åË—é>¸ ‚âõÕİ@ß¨à‚c0ÁNp¡Æ†ìAg\a„*|ÀH Á ^pÀ	( Á´ ñ…-L ƒq(P‚8ö¸ ¨À„vbˆrpÁ„)€€ÁèV@ 7¦ebX‚L@·Æ\ì`>ª¥£ <–©æh¨@Å~²Z,©‚(0e•u™ÈÀÌÀÄlÈf%@°æXg¦É ‰Ú-š:pQ$!q`±C
+<pÀ |
+6@0ƒ\ÀA_ñÂHÿ
+@£g%Á¸æš+l% ë¯$ W ìpvØ±Ç²ËÒ‘† ØÖ+;¼É:–-pAˆ!vˆa„0 jeT:X‚RŒÁÆ²kH1ƒÒúH«YÊ2«ï²v0°–ùîË,pAÀÄªSô`‚4Ü°&Ä0D{pÂZ,ğWhÖJè±È!k Qî¹ ¥A;XÇ²w´š‚Ù.xoY{8¬³ÃY\¬ÖYì¼ómĞt4±‚ĞL?ÜCiø|V
+A7]{Õ„82*˜+Ü¨ ÄrâGÌ?A¬âİL–VWE
+kQ]7Ñk%ÿ =dPwİ7Ğq…¢fém5ÖÚÍõ!l 1A¤ájA
+Gh!‡~Ä;C¹c	ğ irE·Õwç]uÓ|§ÕYx0øìL‘F‰¯Î4ã‹2 ‚É~ñ¡.X_Gp¬2_À+ Pq‡õnVºX§7ºZŠ³n¥tÜ0ûøÇ°G	eu¿»š(`š³íÃRiñ—ğg	¨²GV€8,;,Â¢¹^X²Ç´í¥E}BkYt@ï‚&`ƒÔÂÁñNAú+›¨p†5hÁ“cË 0”À.ĞŒğ*Ø	8<Âhà‚tÀ`Àÿğ—ı½	XÀ‚A@àˆè@ D"6F`a Ğˆ–êL‚d)vÁ®À‹öAâÀ>*øÎÀ†4|
+:ø€¿ÜÒ#Pá
+gƒÒŸ=BˆlÄ#éG0Ñlƒ†fĞ¡TO1x€ö°tE’à‚œp…'A œc°ø-îŒ‹SÓ]ÏÒ;X°ŒeìTé•56¬¬9À\àöSb@B
+4°Ç· .H4¥	àš-€ÁŒp…4Ğa‡p$Æ9NGúUNĞ	`EÀ, ? €|@.ÀĞF€ƒ#aÿˆ3| 2¬ôŠ+uËÜíÍ,
+ù2`‚†š@väƒÄâË«	'øÁqˆCB~.`f;Ù2Ò¯˜H`‘2·†A,‚œh÷p#Ì¬f‚é€!Z  È~ *À
+EˆH¬L«Ì¾êVĞôÉrhf‘ÂS…–)’êqÖ Z7Ğáy½œ*Y“€ˆ£„_
+.@<Í¼ñ-:BÀÙÈF0g„€ƒ¼: ¬À0€W˜€–úê•<hP~ B3Ğ®”gxãXF°X€\mZáÄPUëo=˜]&
+–Š4
+Ğü)Ø „- Ğÿpœí(sq*´€f€Á€Òø•´  @ü	1Œ1ÀcÖT²T´²_áBhëÖ6à,`Cgµrp²%Í Œ‰IìÁâI@| †?tô˜‡XD#
+‘&¬n|¡RaËÖ¥`€0"$ñ^&ºÓµ[dˆ^ìvet oÓšÀ…Å¥ \˜ÂàÒ ß¯˜V4¸œìP6¼À™ÁÊLZp…;Ü7YËY„¾0Ğ0˜AĞˆwå$XÃ‚àDî(µ,®®+L)plÀiYşƒº¡c&Fïi!“bHAwHƒ4€Ô¶ ÿÁ¶L>p°F4â«úC!:ÚÛujÙ.è@Ğ!-às<!½üä¹1uÂ]¤²X`22Íl¸ÀZJ Âq¡´bÆL  ‚+€SV˜ÁsY=ÄS4`Â ±ˆ=¨Êù%Ä€`&$¸Bìà”t.~´ê*–ˆÁËRhºì°¬`YÏwÃZ·1+Æ}A°ƒLÓÀëKºeiÂ±+c+ â…°ÃªÚSæìZ
+0÷`}…#ı ë.L£M§lÉ2;,W¸òâˆ»– 4ÁCÚ˜Ğ}ŸØ1x@
+¸Po;P<¶q9€îğãÒÀÙˆÿÄóª¾Yo¼Ša)dÌœ©`!€œ3Ç^Á)|p°TĞj+HCÀ¿3Ôó‹vj·s€è@Lì‚g—‚	ßÈä½r;r… ÃÇõ@£_’:HÇ²ç…İƒ†…6#æâ‰&ŠÄ†¤’/	ĞB#J,œv¿›+Ÿwœ:j8h`7C§Kf@‡?!Îra»öÜnP«a·Fİÿ‚wÁ #ÿÃ\Ğ€¿@ Yd/Mlp‡Fª<ñvĞ³G^,  SŒd-‡Ä¾-šo ç•îy±Ø@Ì7ïKé#)èAW(Aôõ"5|:<`Bÿ! qˆy0Y¸>D!ş@'&ØÀ‡bNDÿ€Ê~q)@
+î°ˆ øÚ-É·EËg]’N°]Mc„1}}1 $„p°}z )P¯ `|Ô‹à„p~\Gv0‡ Hä$Srâ,ÑAL >`6Ğ$Ğ  '"`l1\°W Vw‘s´s‘w]¡]V#Ş¶¸Œ@)ğ|ñùåI€2æ –@ `^'‚ø•[º52¹õj¨†#¸*k3HÑ!›ò“£ƒgq AĞ€lB˜EDx%P€_ñâÓ4æuw¡@ 	’à‰ÿ1w 	€…~± WXr|eÑ V°7b0œC‚ùu~€!¢3ğ5È`€°ÈŠP-0@0CRÀrp~ÌÃ/ hvH-€$„'p‡qQ6€cˆF gpKLsˆ‚Ñ„vñû¥‘
+ ƒp~}Á z40@…wˆ‹p	 FPñIÕ¡ 8¨…h! ög\,ÒF`g{j£R$0]èğ%€}ØJhÌØ|aÁĞ(4&˜ˆ}à]Ù°‹Àz‡p€q !`ø“ :ğ@Ø	pnVÀ‹ÿ@  !‰&Ò à_@ßb†ƒJÇ€!ÉøJÊØl‚èY^‰ˆK`Nàb@uƒª 	 ‡Pr|q >à7×_€@s‘ t 	l *ğ‘ÀÈpqÄt`$ie ° ¡2’~ ˜‡OIPQé=y‘;#Ar! èØ.p;  €™è£‰o1 â•]1e t Ö(° T 	b—~ 0)Àlp‚$Ãxd3pN àÇˆ/™•›6•]qKcˆƒ•‹ÃJ	N°™€§†ğ\$p]PGÿ“teĞ”  š¬I b0&$©™A%	 ApáTg`
+ @dğèƒ|)P’É˜Ëf5
+HØ4°„za™oQ‘À¶Ùà(Ù"	‘è|zaç3àOu1 ZpèS„à‰—1*%‡ l  œä‚@ É	eÊ3¨.€^
+R€€L³=ÙÚp{˜1Šğ™^az€á °­ég€/°”8,3Ğ/~0 ™1*0rwà~“kà\NY ]ñsÚã–iñ|V“Eú? bV“šæ.ğ6R„Õÿ™¢_ğè¹oRP9jĞ†  ¨		àq¶|:`9@ k «¶™´d 9ÖIwÚ£d¡§4ªg¡“åUbè5¸ª{0$xÛ6eYI$ğêÖp@DÀŠ@ °¤_aN`nğ]sÃ¢_À{€êÅ %àl`8‡j&x
+ rğ£¬kñ»*b‘ 9c5=ğ}l¡'C vÀ-àkMª@“‘
+dô`dl`)°B
+ÀnaìG+.`€É¤‰ğ“PfI¾ÂWÙ]UÙ4=ÿ`wjaMP^Ót`iB£„nq;«3`UáÂ¦]±°iÑ 0)kÀf  ˆ`¥c1õuQÛ Ù… gÀip †3Z	‡ğ°mÁ“`«&Ñ%…È4=mjq¤åµ¡z·Ls;lq vTuWÉm:)ĞAJîsœà²Z
+ JTà)o1e p°Øô9P.odŠp]‹‰k°- -ÑuHº3+à·h!±«37 °`ÑÏf57p‘7iP7³jÉÀ‡PŒÑ>Ğ JpJæ fÁ Z°†J@€h‘°è
+ ÿG°xƒ «ê°ŒĞº’]:û§Qš`«BÓN0p¹œ:ó Jk	0mÜEZŠÛ4ê…„¢½± g	@@à¿W@l~ğF€Àe0	wp¾b± iÀ$ gp¡fá±Ğ˜]Õz{ @L°K¼là¶`Áèõ @È´gÁ I¢­k!-Ÿš“ĞeQ . 0 @ıÙ°‘`eZ€Ÿãd¥gqkp3°(Ñ0l5 ı»¯gp»õ®añ:sW¿5l`˜U71 çu¼pa{@@Ü§N  Šà ÷ÿ °-ğ6 ,i”êpà6 !4Š7Ğfma½Šğsk3ñ v ¿:ãUAP „ª í ¶;8…Ódd´L£ÿd¼‹%°@ÈSÃ…PWp8  ó`„Ğ;èCƒ k!¡”º
+ P{xÎ`q RPÊÈÑ v;8" l`ìä€hv p@×³cñ:¬ÜÊ¬¨Ur   v0q,41ÀÏ¼>s!†ìû$°`ˆ@rPÅ&Õ™X h!2%:P¥Cç “ /»ƒD)Cßëëe?°ÎšÑÎ)ÀãÿSÀ/«²iĞôª3MÀÍa‘¼èå0+@¬{€~;ıÏû«£·´F`'Ğ'ø“‹ 	ˆ€kà¥bÁ \0Z6 Ğ] ]ñÂŒ‘ ­'
+@WÉmı?0(Û#í¬Ê†;;ÓP	İ4@RjÏ
+uA" ÔLóeÈ:Ìp±bS„œ.|2ÍP×¼ƒ Ğ!ĞÕHpÇ6 6pŒˆN@Âe ¼1¿’`i Ä”Œ¹zòÉ í )KVÓX‡áµ×¼İUrĞ©NÍÇoAR-pÒÀ@ÌK`[æ6 ÄdÁ]Á V°wÿ Fp¬oÑÉL Mi ğ ıÆP%í(Ûd¡‹PÛ
+rÛ ÀE;Üƒ³lÙ_Q?«ßu£„ÊÈÃf~Ño±—ĞÖ	 zĞL€Ú À¹ü
+ JĞÃlÀ¬IÀ\t°pT]‘ 9`‹ É°p?¹Ê¬f­öızÔ&àL£„Mm.`7ã£„KQO vq± /ÀI‚+WĞbm¹FĞ˜—á^@£+-@ƒ`ÂeG ‰…àĞ @ úx"šxğÒõ¯_‘1€ä lĞ!ùlÀÆÃ­„Á*Ì\N°ªÿô ¿x#êú\ğ‘âŸePNp‚]`t;@á ?p; ĞRà¶PÆq¡l`¥`ànû¥È/,ÆÅ ºÑNr Á7t^çb€Ğx^¹K™¾ÌÛ=@C¾Ø…Nà½^ñ©Œ`0p°¬yr Æ¥ï¨+IŠª°{ Óığ?` äY bĞ  Ó  b@ à Àøö×@‘`„ÂGæ¨iEğ_pÒÃaß^W ?ÎÛ&gÀÕn‡IƒØVŞ·‡€Xäq!x% 	?ğ k	Œÿ,tğŸÃ´ï ğ ÕñêÛã}'¥M·…p‹
+`ƒÀ%‚›3/ğı®|¢ -`~ğ/wM{P'ŞÄAñ_lÀ7 ò;“17ÊÅla0t01°Û;C°gÿéR‰Üpñ œ£ğ øW@£d[ÍUe`dàU‚ëmñÂVàkôÙ: Âtp9à Û7 TĞR`IYÒ1TqlAl0 '‚¿6 ;Ú ºg !dgˆ€êÂAö`Ñ¬	%;ÕP7€máâ®`)C 0ÕP+ĞS`°Æºƒÿ£/8[0r°5z€vğxÓŠpê}ş}ài rª-‰úş¥gpğcÁ á-¬`ar%Å  >„`Â&">dğCL‰‡üĞùñ$‹–5V(\`åˆ‹-]¾„S& !‚lŞÄ)d&L)˜p9Ã†;v†¹ò£ÃM! aäŠ6Bé°áâdF‹N½~8¡9N0B¤  *3,À±Ò¬Ã %œXè`‚
+:œ8	ÒâÃˆ²ğòŠ$G0ìpÀÆ˜Müø3CîÃ ˜hé Ñ#¡'²c!âRÏ…bÿMœµuÊÆ[÷nÜ3¤pT¡„ÁCxuhqÅ„ ÖÜ2#Äğˆ> 9aêò‹,J˜>°H…Ê‚¦
+Äš‘ Àú ¨Ğr%ÂEv¹ qBÄT"Er"ŞŒ‰¶Únº@d0·¼6S°„¬€XC‘`J	#€€õ*Ğ,°€'´¬<1¹¢,èà…ŸtèĞ¡ÜÄ#"H€# ’
+C
+!c¿4ğ@A<²I'Ÿ„ò¢t¸BŠüb@E¤øÀ ¿ü „˜A8â
+%Ä€!¯^ƒ+¸(ã‹ i‡?1$)€xâŒ.öhÄˆ	ÿjŒ·$d2QG…4QÄ #..½”B¬°a?[ƒélP!»™€5Î dCÊ-RŞµÍV]wåu7
+Jpaaè +èÎì5€ ¸€¼^sÃ5§i¯Å6[§`@Um¿…­ZÁ%·\sÏE×%qmj4]wß…7Ş&×]R^{ïÅ7_§èmW_ÿ8]~&¸`ƒ±ø`…fx^%"b‰'¦¸b‹/Æ8c7æ¸c?9d‘G&¹d“OF9å’f¹e—_†9f™g¦¹f›oÆ9gwæ¹gŸ:h¡‡&ºh£F:i¥—fºi§Ÿ†:j©ÿ§¦ºj«¯Æ:k­·æºk¯¿;l±Ç&»l³ÏF;mµ×f»m·ß†;n¹ç¦»n»ïÆ;o½÷æ»o¿ÿ<pÁ·)
+?<ŒÚG\hGÁeÃ_ºñ±-WúqÆß@q±'¯ànĞß`ñÍ‡\rÌ‘^ìÖÖ|óÓÃıÀ
+òx{tÊq’õ
+"o¹v¥_÷šø¢c—qÚW×w·uı¦6zZsà±6pœ4áÀ(omÄoôß¦?w ­×:{ímâ^IÄ¯/{üÜ#u›'Bë’°¹ÒÙqøüWá	¢v£KŸé—˜Éo{œSÒô6×ÿ	
+b}(İÁÿ¹O–; S?–Õï@íC`6G>ú­PyJ’!ãhxÙ!PxÈkİæ˜ÀÔ!.‡Ñã	‡V;Ì!«K8»F‰Äè¦ˆ>	R‘e,!õnDÄq‡»';BñpK]ÏÈ¹ñ‚èí¸x“nÎsUìã“Gœ@ou?LŞ£XÍò„‡3£MX
+‰»›Üè¾#V±kãø4è>ä…!±«¤‘8ºäaŠƒ¬ x È‡‘q< +`Ê#Êñ‘ì+]IK]¢o”WdÜˆĞ>ÿ=,v[€&4‹@ËØÕÿ`™ú«"û®YLk2SŒó$›)¼6 À;¦,©™ÈúŒ<«İq§9l‰šÃÃ¯×ÇA*’|Ìb@—Ê#Şd’Èüç•¨B@ ”’…Û£ 
+:ÇÛ9¢½ÉDÃËA’q[¸ÉÒØB+‚of¸É4IùÑbîˆµ‰šx¸|Ú¤îkà/iˆ8p4›t.‘V;Fqx°gËê8ÇHZôWl`Tƒè>ÄA'*µã]¦9àäÙå }8U„–µ©Ø«X[FF’¬ş¼â/Ó‡¸Ôf©¿¬@jz œbS•ÀI0;="1‡,šğ×8>ï“ÿ)ÜèZ›©Ê›HU‰3­@¢¹f¶Ì‚ˆÁfkğº<Ô„~½h\…ªÕV17¡d—‡Ò"Î—ÙÜ¬H!Ù‡>¸¶şCœjó½İ±u	Ô%ùYXç¶6¬ä;á‰Â7R÷Š¦…ì/·:YË®ò­a´¢gÚÅEÚä˜^$íw#»Ş06—}µ‰-IçS¸FÑ½x„/p‡†ÚèÖ°Qüc_gëÏ×Îñ¾v´nÒ»¹èº/`ÁHµ+[üu·²ê¥+4¬aÚî°ƒâÅc‡Eì¼- ³¬uëeO»bÕ˜ˆ ´ëdÄÂ9ú2vŞ0mıyÛøw¸¯ÃìxÌäî˜¹U´ÿã!NÄ&ÖrØ2fQj“øê”w¸)›Ú«‰ˆ›CÍ,øÁ&K°@³û‰\/¯™½VŞ²>)\›ƒ’/­òmqæz¸ºâä®µôŸ€+šZÀŞD°+¯ÅW'c’Š–t–u9d-[˜Ënæ'SAì²;ÿ²Á.•W›â<»yÂcOÕ'a%i¼ƒŒ¤FcW„–ºï 0„Lw§ÑU'ZĞ;=œª_d@ÓÒ’˜¥j²·â’–y8¦?+,Pï¶™¢U¨‚±kÅ qtQF\üËb¾ª÷Ôç†ó‹Ù'Ä96•}LÂ)'XßĞÊ€˜ˆ+gmKQSæ!ÓqÆ«+æ%É8f¯3Ñ2-	­ìƒ#{‚«;/ó¸Kí.—:£å1·)Ê¸?b„£®ø‡ÙKV`°Ê­–q6aÙÖl&’¼û^9ÇCnP*>¸u®¦ïPëW‰—±¨Å+Œï8mœRÜÔàï¶íûT_Ü¤9¼^z­=r/ï°Ä–oVi¹Å&+Õ8Ù¢‡áqæÔƒÆf7#S^ãùµ]j8‡İÚáVF·×İhFl-Óà>÷¤Ûİï;c\¼£İ´½³m˜rÿ{âofÈÄ9­ğkó¢â%¯³ä‰iW›¶'¿yÎwŞóŸ}èE?zÒ—Şô` ;ÔYimage/gifOçbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯!'-.4567STUVWXYZ[\]^_`abcdefghimU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€ €€ €Ó()$+,WNS.base[NS.relative€ €€_+https://www.google.com/logos/Logo_25blk.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÃ3²¦& ÈÓ89:FRWNS.keysZNS.objects«;<=>?@ABCDE€	€
+€€€€€€€€€«GIJKLMNOPQ€€€€€€€€€€€€_X-Content-Type-Options\Content-Type_Cross-Origin-Resource-Policy]Last-ModifiedX__hhaa__TDate]Accept-Ranges_X-XSS-Protection^Content-Length]Cache-ControlWExpiresWnosniffYimage/gif\cross-origin_Thu, 03 Oct 2019 12:00:00 GMT_x
+
+YnBsaXN0MDDaAQIDBAUGBwgJCgsNDxETFRcZGx1dQ2FjaGUtQ29udHJvbFxDb250ZW50LVR5cGVfEBZYLUNvbnRlbnQtVHlwZS1PcHRpb25zXUxhc3QtTW9kaWZpZWRURGF0ZV1BY2NlcHQtUmFuZ2VzXxAQWC1YU1MtUHJvdGVjdGlvbl5Db250ZW50LUxlbmd0aFdFeHBpcmVzXxAcQ3Jvc3MtT3JpZ2luLVJlc291cmNlLVBvbGljeaEMXxAZcHJpdmF0ZSwgbWF4LWFnZT0zMTUzNjAwMKEOWWltYWdlL2dpZqEQV25vc25pZmahEl8QHVRodSwgMDMgT2N0IDIwMTkgMTI6MDA6MDAgR01UoRRfEB1UdWUsIDAxIEp1biAyMDIxIDA4OjIwOjI1IEdNVKEWVWJ5dGVzoRhRMKEaVDE1NTGhHF8QHVR1ZSwgMDEgSnVuIDIwMjEgMDg6MjA6MjUgR01UoR5cY3Jvc3Mtb3JpZ2luAAgAHQArADgAUQBfAGQAcgCFAJQAnAC7AL0A2QDbAOUA5wDvAPEBEQETATMBNQE7AT0BPwFBAUYBSAFoAWoAAAAAAAACAQAAAAAAAAAfAAAAAAAAAAAAAAAAAAABdw==_Tue, 01 Jun 2021 08:20:25 GMTUbytesQ0T1551_private, max-age=31536000_Tue, 01 Jun 2021 08:20:25 GMTÒ/0jk_NSMutableDictionary£jl3\NSDictionaryÒ/0no_NSHTTPURLResponse£pq3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ˆ  © Ë í ğ7>`cfˆª­¯±³µ·¹»½¾ÀÂÄÆÍÕáãåç%.47@IKMT\gsuwy{}ƒ…‡‰•—™›Ÿ¡£¥§©«­ÆÓò 	/>LT\fs“/57<Xx}“—¤©½ÁÕ             r              ã_+https://www.google.com/logos/Logo_25blk.gifOGIF89aK   ÷Õ 
+@=?   	
+¶¸¼àáã S]l) 	^{œÀëˆ£ÄalzDKT2JdGa}=PfœÊülŠª .F
+)JjSÆL|®`‘Ã-CYMp•",x¢Î	NªüK›æ0a/\†+T{_²ÿ9Rk·ÿ!)8Èÿ /U +N )Z‹(q¬4ˆÎC«ÿtÁÿ 5] , Cl
+;_ ”ê.šï6¢øO±ÿ	Õÿ d« a£ M 2U 1R (E &@ #< & 
+T‹>f4T1N¥ÿvºHr ÿ •ô ê „Ø {É qº o´ hª Z” Pƒ Hu :_ 4V ,G  5™øEpM| ¢ş ;)>;@PP8_8•ç•nŒnrrYoY%N$=t<kÅj”ç’“æ‘—ë–œí›¾ÿ½pŒn
+	i€eJUFÿÿSÿõ	ÿò8Õ¿ th KD2-Ã°şğo¯§^ô× dY $ TK^S…wzo%^Vƒ<æÖk  0,ÚËoõè› SN9 
+	7-$ëU ÎK 5 û\<% 	 ›6õZì\I|)h&Ny0´J˜=ÿm+µ4 T /_'5  °T3ÿ}O×7 Š@'r7$5Y. ü„\N9e )ö“uÎhÙ†oÿ±šyA3+T92²pcºŠ€v_\  	                                                                                                                                 !ù  Õ ,    K    ÿ «	H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜ˜p Ç†qz“T‡%Hxğ0¡ÀG„uæôqƒ‚†1I”XXĞDÆ‰%^´ÇÎÅ#lÔ²%Ğ‚tø­!„<Î<…*µ"(
+A"B[&ŠBJ›D…BTµ<ÚÃ†à4² ŞV3À×À«ÖxH@.X¿+(ª’¥H•0]*øE6àXPœº™ıÂåË˜/{÷ò%è`‡‡å˜K˜¬y˜hĞ¢	JX¨–dÇ•ÕŒ¶kà/a®N‚×Ÿ©*8‹–-$ÿTTH¼ 
+Jv2¸šŸ<kª	H6[ °UÛ²ĞA¤a€dß/µT#´‰oÕ$g©àƒù¡ÕDcŒ4Õ@Ì+¥0ÄA\d'L+	Ó‹’`AŒ82€>¤÷V
+V#Ç…Õ<#L3·àr‹C(Ì`…VĞT0Ø1¼cĞ1½ Ğb"qâ5@Q¢@œà‚@;bè/õ=„€btaPT BÕÃK~!Sà%…<’¥!iAE@Æ@eV£/ÑETÄbq×U£+£¤R1RRB 02PKHà É‡rÍĞb
+*ì!Æ9Dé˜Õ´bJ1s›@‡"ê@Ÿ,2MAĞĞ@sĞ%+¦Œ2$˜!‘…2˜p
+ Ã/t
+)ªœRL0±èBĞ#†L’È&–L"ˆA+øP¡¹ÇiD)¦ìâK,°>”„\CagP)°´RpAš 	"/D@<1„f0!ĞmüñÇ@™œb‹-šn%Q ¡„@7\1….o áäD›9TÉ rĞ‘ vÕ!ÃHo„ THÁC?¬ CQô…QÄ PwmöÙh§­öÚ ;Ô !"#_application/x-httpd-phpODbplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯ '-.4567QRSTUVWXYZ[\]^_`abcdeijU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_9http://archive.ics.uci.edu/ml/assets/MLimages/Large52.jpgÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÃ3²®O ÈÓ89:EPWNS.keysZNS.objectsª;<=>?@ABCD€	€
+€€€€€€€€ªFGHIJKLMNO€€€€€€€€€€€VServer\Content-TypeTEtag]Last-ModifiedX__hhaa__]Accept-RangesTDate^Content-LengthZKeep-AliveZConnection_jApache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips SVN/1.7.14 Phusion_Passenger/4.0.53 mod_perl/2.0.11 Perl/v5.16.3_application/x-httpd-php_"235e-43996a7af3e00"_Sat, 08 Sep 2007 02:38:48 GMT_˜
+
+YnBsaXN0MDDZAQIDBAUGBwgJCgwOEBIUFhgaVlNlcnZlclxDb250ZW50LVR5cGVaQ29ubmVjdGlvbl1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFpLZWVwLUFsaXZlVEV0YWehC18QakFwYWNoZS8yLjQuNiAoQ2VudE9TKSBPcGVuU1NMLzEuMC4yay1maXBzIFNWTi8xLjcuMTQgUGh1c2lvbl9QYXNzZW5nZXIvNC4wLjUzIG1vZF9wZXJsLzIuMC4xMSBQZXJsL3Y1LjE2LjOhDV8QF2FwcGxpY2F0aW9uL3gtaHR0cGQtcGhwoQ9aS2VlcC1BbGl2ZaERXxAdU2F0LCAwOCBTZXAgMjAwNyAwMjozODo0OCBHTVShE1VieXRlc6EVXxAdVHVlLCAwMSBKdW4gMjAyMSAwODoyMDoyNiBHTVShF1Q5MDU0oRlfEBJ0aW1lb3V0PTUsIG1heD0xMDChG18QFCIyMzVlLTQzOTk2YTdhZjNlMDAiAAgAGwAiAC8AOgBIAFYAWwBqAHUAegB8AOkA6wEFAQcBEgEUATQBNgE8AT4BXgFgAWUBZwF8AX4AAAAAAAACAQAAAAAAAAAcAAAAAAAAAAAAAAAAAAABlQ==Ubytes_Tue, 01 Jun 2021 08:20:26 GMTT9054_timeout=5, max=100ZKeep-AliveÒ/0fg_NSMutableDictionary£fh3\NSDictionary_application/x-httpd-phpÒ/0kl_NSHTTPURLResponse£mn3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‡  ¨ Ê ì ï6=_be‡©¬®°²´¶¸º¼½¿ÁÃÅÌÔàâäæ"'2;ADMVXZaitƒ…‡‰‹‘“ ¢¤¦¨ª¬®°²´»ÈÍÛäò÷‰£ºÚv|œ¡¶ÁÆÜàí $8             o              F_9http://archive.ics.uci.edu/ml/assets/MLimages/Large52.jpgO#^ÿØÿà JFIF  H H  ÿÛ C 
+
+		""""""""""ÿÛ C             !      !!!   !!!!!!!!"""""""""""""""ÿÂ  £ ¦ ÿÄ             ÿÄ                 ÿÚ    ı    @xìàì      	ä1‘"øÆ¢=   RyÉ$úsriĞùˆøğÈ  ÄOG –ÅSçÍMÊ€ &|ğğ‘<œ}±éá@œ(}óç£‚…ĞåÎ…‡ÈC…1bÁò¥Ó =>œèL‚:r``xP5(Œ ĞhMJ„â8EJ z¥!BÉ˜ hœL9)’ >8¦UÂ‰è˜á‰‰‘±úA2h±TDFF
+&BÃÆF RàÉó"Ñ“Š‡¢€À21#ÇNGÏLJ`.ddzh,fY= –Š‡` bdÆ% 'ˆ	@®zP:  9rÈLNˆCÃg… 9:< 04rYÁXPT¼rM441)˜Áèè LFÉ‡ÒËG &8*xprP  3#Œ“Ë`.rvf`j:   pN4&Œ‡‡     àDÉfCƒà             ÿÄ )         "#!$0124@ÿÚ  ı°„ÇÔ9çvÀ11Íá»÷>ú(±~”O—]øªAR¸zZ`´\ı/´”ç–ö²À¥Ä½Š6œ4Š¥·>»ôñÕÖ sÉ°Ì•^,NÊÖÛb¬	úîİâÊÔØÜÔ¼t+N©&ëlZ®y¢d‡µ¹OO¯SÂm¡XUÍ(ÿ £¼sƒ¬¥™Ô$!¯ƒı6ìJV¨û»¤éøe»*ZuC¿šQ¥¸GPhdÂö0uV/gMD&º[sİñ<ˆŠêXå¯?!è†±³Ëf?Q;ºuš“RØA6©Î¡Q¾QØ¦ªØõr¦µ§ tÂ™­}ä.!°OJÊ¬M&NsÙNy"»C0Q—šK«ÄÓÜĞºòÓ')¹j•´šYìg=s:ì¯…
+³Z“I•á*Œ odîZœ9Æâ>“F¬–ÉÛ—¿œsÄU[4—IƒªSS.ƒ›^½À§hm®¤Ê™[á²¡†&–(\ûÏXøîeìktà&ê²Å‡Õº$­&V¼š­«vÏ¶ÍµË~ÛÒ¿ØñÂbñ2ˆñydÊ¥ÄÓ¨>Ay6U–&­¹õ¤VmËZÉ[?ê½Ñ°ÉA ÏEÖ6T·UÉâÀ“f¡ÏqXW4æeuiejoÕ­Z`Î¸XÕÌÍjûçôÊ~3Ãİñn]íâUÕ°À‘…^N°ïs[å"ºîi,½N2[uù2Š5ê$Öºß5–, ÃhK½˜B%ñ·QŸÂˆíeòmwóFœèò®ÕzîØdnÔOPVFâ·+ XzÕ“µÖ}ö:Yÿ ]¨å¹b9Ékj2)ÓÓÚU¨ç€'‘é/íÑÃ¹Z~ç3¥ßlöˆÔ4“ükbÈ+}^¬§O¥wE§ÛƒQF"üúLwõ4Š!k‡K)æCL¨È•Ü†r(ç¶£CÚì2‰"ÓB–Ññ’¡[ğçíĞˆDk¬»úñ­B€suÊçK»L«qk@bc­¾UN:—¶ŞL÷œ",˜^–,1uË3Nv×÷\6Äô°ÉZ”™‚2èMˆ%×Ş³XpÛ¯}$ cÂĞÇ?À[ZqÚ…qUnKÙ^ÒÁœ„YŞXµ‚ÇõÓ«Æx8µ-A#–høYeJÄ¹ÿ ·ÿÄ                €ÿÚ ?\ÿ ÿÄ                €ÿÚ ?\ÿ ÿÄ F 
+     !1A"Qa#2BRq‘±Ñ 3r’¡Á0Sb‚²ğ$C¢ÂcsÒáâ@DƒñòÿÚ  ?û	º°“-/©
+úÊ&¦m3ğ$ÀZoI¼
+g­Œ³ûryTã/< Z^4¼ï>…¶‘9  ‰i\}y„aŞ™&«0Tòû…ÀÂR„Èv3‹–´şiøÎ4ú)7(Şpò†ÛMMÎzFÔjD²3¾Wı¬ëJê=B4aMÙÔyª!n|"áZm(œUìM1Z¶Ã†–Z©F­ê«(Q5§“;å•Ğ›Šôw¶ÚÔJ7	_t6TMÑ“däDŞÿ ,„ëmÔ‘1¢¶ñv„öÏ»;ãŠ³šzN<Ìk¸–‡øbgâW”8İ|A½zLgïgÛK"ÅP|¢“ªàÅ÷®PÙIMJW%	Ú¯ ‚µT„+”£í\÷0n‹#W
+R‘…&u]İµZÅVœœÂv„Ã:dÜ–™‘—Ğ(d81"]pZ}'%:jØB´3×”ævF›˜•Õ)Ó}ô}L:Û­…%Ïææ©ô‰§¥gUAB]\3£©Ö°)TµwŸ¤"ĞÙ åşğMt:fˆåM;"™ëävúº¢§–im;Uä3€çµZ•ÄÏ_9å~–èmÒéuÅª… Ü“VHÃZ.¶Z[šoäÎáÕq”¡³,H)ÆëïÀãAP™%C#¾4hİhÉÔNw›êuCo!58‡×#q‹5RSÊ	W»Ÿ|¥¾h–è¶BF=!„¤cHóz-ZR³Àâ› ¥ÌQGgÔCbÈÃœÑ7¨™v~‘ÅiJ&gªf/åŒ{p#¯Ô&rA©]‘íWù¬jqjZA'î™æ oV0«=U?>)jÉ¡¬Û„%§&—ì÷ªÏ9RpÛ2„Ræ’dÓåí»ª5€Cí*’$¥"WÉ9ÉPå¡•ShLÁCaİb)ÑÍ3ŠUœà>‰Ò-3»[TŸœ)ªŠj©8À
+],A ªWÈL^DübdHÖ½ùÂ—
+r•Ò$ád%Á6¹ÒXíºèMGJºi)½RÌ˜JÃªC·•SÉ$í4M=)óó”jO7Ê%×x‰ŒR=§%ò®3È+KøÚMJï1>}±Usÿ ˜U¶Î©;:[Ÿ&„]L¶Nf—MµTrHŸEC”!Ué
+äßª³<¤$“„!¥«Q²B”©V Ï”˜N•|X¹6ŒÄù®nßĞÖ³‰ö©ôÎ}ã("smÔã¸À¯Ú'QÏy72HÖ3W\%YÉ&N^i–Ëó‹Cn€ZK'²]{¡ÑP” Ê°µá*p„ÒfqêŸA4ªRšnıÊJå#÷ãÀÀÚò~¦7ÿ {j„è•A“,¡{+•Gº›:´Í'ùkå~UyÂ¥±ËP	Í2Ã¨Ä–£h³°«îã7ÅÙ	}µIx¶òwxĞãNR\lĞòEé=[Œ*È£:/híAÿ Nå›™í[êW(vZ9¯'H=äê«å.
+ÚMI_-nß8+q4%$=Ü>f~´ò$w,Kõ'ƒ±äüîúÀ'Z…u;xù‘Œà˜l((+0£$Ÿ„Dšp8ŞIwˆy@}ä¥´,šMUHçp7/5¬­4ó¡
+´)Imıe°Ön{a•É!MRUy"¬Ã“g?lõ)3ñLY•¶´w¦Ûeş2Ÿ‰'Ë…Ôf9ûŞ¥JAlôU–±"’´|:éğ‰ÂÂ9cYi¼xAû‹ksIØ´xBu´VÆšH¨xËœ•D­“ş#ZÃáå%·“¤¢„¡D¤‰™Ï¥”hP½-¥bápB7Ë$ÂÈ«G{¯b
+† Í÷ÅÈšPØ)ñ‹2s.İØ“aø” Ã?æ£‚H2;Mğ¡Œ”DÍæì/õmÁª}‚û'#¾bVÔ'ÃÆÓfRÎ…Şƒ£gæÃº,©rl½ !'Dˆ–Fì¢O5¤x×úMñKÄÂêiıPëô3¢!)AÕÊsº(g^Mµû6—Àô•ìæ§$ƒzgøTíº¥åİPPĞ0Ş²w¯ÿ Qci©En+d„¿»†“ìİ3IØ­œ:6äWø	.‘K—P9§+óŸ“èÃcbG‡Ò¦ôÖ7	$Ôš±»1:’-6V­^xH~ç;;åi@‰Ù…Ö$®ùÁJÛp§kAy”NPåM£qî‰73¹(W”I¤hS÷cØŸ8™Ø1ZÖ|I‚\½çNuììC–`â›ìåÿ S%RzÄqÍÒ:CXyÀk,áyƒ}JW)Q%	†4cÙ¨MˆÄuC€b¡@üÆŸ¬K€R*qf”'y‡*o]ZÅvuIR7`«•„ÖŸD)U ‡@æªƒt)«+Âsh3Õ3Û%Á4š®¸,ÒD¥«uÑ¨Å]N Ç%ï&³Ü%ãU¨¸÷Ş+é¢³+ÚwåJnì£É½3Şe/³±µzEu7ÿ "8l¾ò¿AièY¤) ÊzLI–Ë¢¤)t$È-À¢š®rÓ×„RøK¥@H<—,(tjçœN«E–bXª™‰1&­I]Ôßy–É¥InÆüÔcø…©ïÂ«“ğ¦B$0b¤í»bÅ5 †ÒrHÇ¼ğ°ïAÑ>¥jıai8<Øşƒ#ú£ÑÍËd”Kp2âëå#ÏZ|¡m´«ÔÊYPwåÚ®^©T5ªú¥hWI
+)ğ)eİÊ¼¹Ş;%Å ¶•æe)ì?bh»“çÙ	Àp­¬*ùCVÀ8ÖÜOô¸ 8Ök6r*•éüéâ*kÿ 0`yĞª”"FaÖª\ºh?ò—R°˜ªââI;«¿ë.8«‡8ü£^k÷Œá½ê3ªòuG_¸J•rDiœ¹jÁ=ìóõjÿ ·|ë~0l{ßgVÌéÔå)²áç)¹I{åÍT.Ô»”½T£¢”äwÏô„T¦ĞŞºÀ­XË<â¤™¤àbTéV–äŸÄ}DšHî¿Ô©FIÀqÁ$‹ĞîVÿ X¶±4*â#Ñ-šÍŸbÿ €'%Œq%§Òé¦åö§ÙK:ôïNC¶é¶—LÎÍÁ'9+iT(ò¶Èa."ò$±‡o	X”iUn|‡P‰pP‘[õÙGµ–9#šŸŞß°(X©'cˆ:V¾éfñî¯Î(rl¹ÑrîãìŠT&“‘%wtxïÆÒÛš5<S®œ$Î)Rêk%s‡¼>±[jœ”ÌÆšÒììØ  ”¤î•ÆíğíŸKRPAAFJË°ÇÚóª>qÆ®Iè"ïêÆ)@û:V“°ÇT×¸¢v®óª*—é”6”Œ ‹ï„<Ãh­še*ß¶5,(I;J ùNã’Ò¯¢$ ×ÿÄ )      !1AQaq‘¡± Á0Ñğáñ@ÿÚ  ?!şfİHÆµ
+yŞÀ¥Í‚>’˜`µtĞÓ!<7çìJ1¶›œMj+ğ9±ÏöEG†ïöTiá?d^ÔÕ„œ5¸Í'ÂõTFNÉ¼uDòQò0£È±¤&ÒäíCü1©1ß»P–°{$ËE$vÄ%ˆj¸¢U¤ŞN"¶Åo¹Á(6&œY{æåv«ÄA;qhY®Í§v hPË“1‘rîB¢Ş¬ w×MFÅo­+3BH·ÃÌÿ çl«½Ş_ÇÕ2ƒ}™ÜĞr~v	?õÊãRO>#ı	ñbo2Yd‚êæ‹­¦z\YÔí@¢%€yh
+/B†dËK[Í!7DCT¤HÇî—`nC°Áš…°M`+.ŒÄ1Ş”œ”²/'éaèA¢F¥wJnî—)ò«ìáY"ãİ- B3„¨¦XHX;ƒ„Ôü@y›ğ_…Xş~¸]*û‚	ÙÄõš\¢­Ë­ñcqŠÎòbp7¸‘÷Q\>G^»áÖ_û%ó)°\@<&ÙœR[6Âï{ ©cBHèˆˆíP”– ˜Ÿ4&°ù2Á½,|2%b37h¿IDi7;b ÒE†GÉk¢¦w‘–nı	×Í4C'¢ÿ ÂSûâVƒæÁ„‚ÈE-¼rHKdÄLó3WŞÓ“‡i7\:Ğ‘‹®4<;qGø³Â{Gú®è(Í<¬n7 iÆ7‹‰Ú4ïS˜¦%%ÊÇ[§2Àí3H@ä˜i!H“‡4Êtˆ(™ÌO5°ã5æúTgF›İ*Vˆ¡‰HØg>:±PjÙÉĞev<b—ïC>~ÔŒÏ‹BÉ1èkÉJáé“ä+çCü½‹Å©©§Ñí]SõüØÖdÏÕgş;2¾ÊŠÙäÌHP .‹Sö½’å¿as«RZÜGCaVƒ®h›4Ä‹åóÏ®´³³šŞ}Ü>Hš³CŠÎîõ¯)½“×Í,œj@…ÎLğÅ #á0î)·•R÷›Á~®Ëà×ebâc‰D;ÄtìR<òTaÕõT“Å2Òâ ¡s¹±ëØ«9—©6íõmNš‘1dÙíŞ†ÆNéº¢…#7†x?Õ4èFİ²”xEÍgdı¯šãÀ{JGç âf×şÕ!“fö1<¦4èîƒü}ô·fO·ŞÅßá¡.şµPGÄØMµ¼Ê†ÆKï‚Ì!Å4 ;‹-İ‚*ZÏ#¤àµv«ÛnÀÃ…cz0¿´_B¬İIÛöiÈOö…)'tR§¹±ÓE8¢«ŠÚ×é„O3Ïµz oXëå÷QM(æJŞ¢OW,®Á“ı4Z åûşƒŞ¯¨áY'Q¦Ş6¥åjLòAÔšÒ*_)»µ¾ùÃ»kıRßß^ÿ îévìa­¤Ò„j”I$³n˜„ÊnŒD¨q!ì×0c¤’C°L¸¶ÕŞvV÷ı€d¬2—ÿ hÀO,÷`xZ¿Kuô•w³Bçz½P¤±İ)ımMÑrİİZÍ†Ç†q{Ü©{…›ßï½ëDõ‹4Ù²³W¨‚UÂtÀ I7ÜEålTŞSiL-l3ĞÛÆNú>+‡ßÃ¤÷é7û{\¥ÀÅÖr’Ó$À¢’ÇÌ_b0BÏ
+ä‡:B¤ °7$-E‹kõñ '¾b|y¿Šh½òyTá’‘‰X)wéÜr}íê@É¦„ğÖ¸İı‘Õv  
+¾-RšÅ‹B—™óp¡¿BÏ÷ ”†3wP„`#¥±ftNóx V´à‰1 gU€äåÔÙ²º/F“…	ƒv‹($°f½J9Qò5n½A¥‹œ1ØÔ$v^iã¶¯‡u	ÃÀüUã¨[ìÛsi²†Õà©:Œm%òPª¸¨Y’ ÄlïOÜpä—C…İHQ9¹Ø£V&lãjÄÛJbH"JTY>*9ÃÒ'™£Ä °“•Ö>²ò\ù*õ¹òW×^)%ÂıÍ»ÕõP=
+Çe½Ëò—èhdòØyƒPPl×tØ@NËD-NÑ½ófÜÒ–ÆH|Oem°²HÚ_:v¬)ÂA³6êfñn‹şÂ»{öÖ#¸:œåÑ±©á½`mğîŠdœì¡æaÂ6:TE…A¬Bû¨D¶! {1èè§A©Áv‘ÉÑœ˜;P¥ä!Nh`“š¿ÃŠ…®+ÌR:y®–BÒ@†ÿ Ïü~.w„mÈ<hŞ—‘ƒÙ†~=«E8	¤'‡ëD1™å¥²U.VvPã`¨^QÁ1s;–¬6ã®ô‘ãw›ÔÕã£ƒd*V×¯ğ;şFì’ğu`Ì*bÿ À^®¨qœÑÜ^*ñ{s÷«Rû½ñm=ä¨³* [ww%stAÀqÆzÊá£»ğkR±
+N	É¥õ%˜é8^Ÿ¿½,!p?ï/à,#‹á£A¸„[\Şô'„óÅu2eÂ¿t,5$ä	ØŞrHµY>.ŸúŞ¥p±‰& %t(Y)‘Rº×.)d«[6ëE·|×üS-ó†Ê»ÄT1íŸÆ¡#%'¦¾)ıûñ¦ßQ¸ğuˆ!(+;¯Rûy †¶P-”‡1®8¼mÖ¬®û¿ÿÚ      ’I$I$’I$’H I$’I  	 I$‚$’  I$ @$‚@$	 	A @ ‚H €  @$‚	 ‚H H @ 	’A I$‚A$	 A’ @$‚I$€A I I ’@$’$ $’I’@ €I € ‚$’H  I$’@€$’I$’I$’I$ŸÿÄ                €ÿÚ ?\ÿ ÿÄ                €ÿÚ ?\ÿ ÿÄ (      ! 1AQaq‘ 0¡±Áğ@ÑñÿÚ  ?ı†Àñ.·/YT>^¿äh~¤íqô°İêÄ9G±ÉÄƒAH°òÄ»ıñ`
+²h)Ùã	¡šA°’Ìâ™õ˜€x/Ôä•êcúÑûLqc¨¢éÌã‘¯è'!3G"MÈ}N¹ÍÖCN	á€’iÓû2i,QÇ“ætrâ‹´¸rh§¯5¶DÅh·ÿ vÿ  ë¡$ÈY(ó§´îFàÀ!0wÀÆÑ†ál˜!{ËSC«Qöl£‹bÑàZ“”S3Æ%rş§ÙÉI:? K"æCE›°¬§¸Á>Åü;Á]:8ç£ü~¸|°â1T)QÛÑ.u‚ö#‡¡½°ÇáiŠhH›¶se¦ğ²^Ì+Eß1ô#ñ…€¤0b¡§Xwå°`Z5¨NjÅ„ª†‰å1áÇ*«»dcGÀ`ï6…šn#F~¡*Ê â&Qk·ÃaXƒ¸¢&ŒV•¢…Œ@Í`2â‰ó‡§ñaîu>Iƒú ˜°JX¸,ğgè$aÀo—·„ˆÌÍä¹rF—d€áe2Û”!nØ÷FC%¨”â¦™¡fA2RS 2R¶‹r4®8ÊhcåÕ¶˜)Œ§¡ĞŠ”ÌrÍk5ÑŸ€P Ë‡Ñ&b|cÈ›÷FNÆ-ÕÅÉÂUx"¶KÅ$†°a<G‘@ÔLôôŠŠ5L?Æ5ul1orñx2>D™2¬ùr ü!´	ÂsŒC>À¡‰yS–"Ùä¾A¥S›.Ìód<ç=RîL%¢¤	ÎRÿ g‘ME[Ør [`¼43ÓX",ŠG3™Ğ«peíÛD€©
+Œî@jµ*PQBÂTN€`øòÚk18dÂ¡¶2d‘„×Ü®ñ•”Kw™<bg!KÄ¥X@Bİ¸ğIràGaL4¢p#EÎY ªàIL˜a8At„‰ìøÔ*ô¯ÄKºÜ#¾NŞï@Î“Ä?	”‰JJZÁAE”·{áš	§edAÙ&Š	ÆÖÜŠ¾ÕGXv@0IÜ&C”P
+m2µO Rìì–üGÑ^F¸údÇ¾÷¿´EÊ ÄŞ‘NFz.JEˆÜåˆk“æÈŠØá¯D”ŞÃm£W3Ë3]´TÃã„tÒxëáAIß\qct/|éÏ¿ë—f¬HûÄrHœL‹¼Fs”DĞ‚VãŒ ls‰¯²<`
+•6Ä2,­@1şMÎ	L·MŒ«0¶ÙR³*’y‘·"ª,BñK œej8Ò=‡Óğ£Q•ÓEÏk%†–-€6üE>ÏĞ¨ho/é0d×~}øp
+O™šOqÉ—¨ŸS.<áª`TÚ¶“·ì¸á˜ÂÂw²³·TFÌbŠ äòB‹–0'Òœ0‚Wñf­,'08Òúc§#É¿÷Î9¡‘2ÙïaMoS ø;ûÄ‰	Aƒ¿Yfö„Më4TĞ´»P!K—  |7…ä‘vsû#xƒ"<>äò’“…C8jCĞk<Š=F#3³&7-Gµdª]Ùb1:¸nœkÆà˜&€©Œ>q_ø*dš@6‘cÆ)ÿ ?ÙÍ!ÒüËøœ1K»jmXZèÍbNªĞÂøşwèKú®íL,CÎ3²{Xá…?`¯r‡%)‘L"<kCC¡dx£8ˆ>Îya{Xƒá [%rrİá:Œ ô¿|LÄ Ï1:€×o.§»t·Šk[hN,Œa4‚£f;QCa8Ì®@í=?ÎÉ…ìNå òñQ,¡Üà R"t­ï¢Å“£¥29ÿ À˜±ËØDğ•»©ŞZH‚Ü0Û×ØÍ¢‹p1­(€¼Mî±ûe.DNìtlÄÑBH`´“}ç”éÒúqˆè§•è@;kËÉä2¶í‚ØËM¿0yÃÇ®ï€®óo™@u“.Gâ1xÚ™Å?ª%}|ãW¾imÑ}º7€à`±Ch×·5 'Tõ‹x¬[	¹&£ÉÀğiYªø`Ö:ÌuÉÊ5š2}<k²HjM'¼!ÇU¼VKˆ†r¨{ÂÛP†ö“i˜œá¼*I)ş²ùÚK|Ÿ™á²ª±=Šìƒ|œz|5×h#ØÓ)V ô~•¿™ÂDæDü¦qHØµxƒ†¾¯ÿ HÛ‚}<¦·F%u–vÏ,ø¶špx.b¨+ÃfA2àïÍÒIÆ..‘Ğ@¼ ±'añ‹ÄêY`ïên“ h€ı^¡_(ø•£ !BŒã©7§Ìø@êNâ–“L
+ñ|$w³çlŠ³C; åŞ$¹Fµƒ¨ …$Áš,R,˜,ˆGœo›Ô¹òxÎ˜Iü´ÄÜfäO)j¢;<àÉ?¸6U3²/à‘q‹,÷ó÷²D¿Ú}áóÚåy]¯Ë>OµaògÓ(“¨NcÈp]$ÁG  ø“›$òÄ­P°…®œg½ˆ¿1M}¸%³Š¿‚IÄG_ã'ĞbÊŒ'Ò-wœq²DK	øÈêªe{Ièc}êÚè¾ğÈ»>CÌ2ø?ÕĞrãıò˜H¼ÿ d¤U7n©ÑO\ hÊ–=‘s®ù8¯#(–{RV#±b‹\Qq8²:–TN¯4ÒL¦•Ê0 –%,LO»š+ü<|È}æ¥‡Óë%¸qëàì4êê¼¸ª—èóıÒÜä@Ä¤P‘L!gG#c	Ô^µ&7Â\ÆNŒéF¶ğ’²šC‹P* ™PœVyœ{ ¼ãÈ¨‘m‹Z¬ø„g"áE	l˜\e1›ˆƒB–ª‹sÂ[ømâ>e¥~×Ğq]•œİ–şó£ö*°xF°XÊí„‡@úäô
+&Ocö¹¨>œÙxj#âoç3B·‰7§{¹;1ÒQ“ÂBjL/‘¶È¤@P­–‘GÚá¹D²Ä¢(²
+|L°ƒ‹ÇMéãá²ËÜ›ÒtÃ»^×·öô$;rºÿ }g Upu üåtœ ú9yp¨ l”#®¢¡
+HáÜá;aìhG<ëè‹`ZÂx ?ğãö¿ÿÙÔ%&'(_application/x-httpd-phpO9bplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯ '-.4567QRSTUVWXYZ[\]^_`abcdeijU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_-http://archive.ics.uci.edu/ml/assets/rexa.jpgÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÃ3²µá ÈÓ89:EPWNS.keysZNS.objectsª;<=>?@ABCD€	€
+€€€€€€€€ªFGHIJKLMNO€€€€€€€€€€€VServer\Content-TypeTEtag]Last-ModifiedX__hhaa__]Accept-RangesTDate^Content-LengthZKeep-AliveZConnection_jApache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips SVN/1.7.14 Phusion_Passenger/4.0.53 mod_perl/2.0.11 Perl/v5.16.3_application/x-httpd-php_"314b-42e040cc7a500"_Fri, 13 Apr 2007 20:07:16 GMT_˜
+
+YnBsaXN0MDDZAQIDBAUGBwgJCgwOEBIUFhgaVlNlcnZlclxDb250ZW50LVR5cGVaQ29ubmVjdGlvbl1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFpLZWVwLUFsaXZlVEV0YWehC18QakFwYWNoZS8yLjQuNiAoQ2VudE9TKSBPcGVuU1NMLzEuMC4yay1maXBzIFNWTi8xLjcuMTQgUGh1c2lvbl9QYXNzZW5nZXIvNC4wLjUzIG1vZF9wZXJsLzIuMC4xMSBQZXJsL3Y1LjE2LjOhDV8QF2FwcGxpY2F0aW9uL3gtaHR0cGQtcGhwoQ9aS2VlcC1BbGl2ZaERXxAdRnJpLCAxMyBBcHIgMjAwNyAyMDowNzoxNiBHTVShE1VieXRlc6EVXxAdVHVlLCAwMSBKdW4gMjAyMSAwODoyMDoyNiBHTVShF1UxMjYxOaEZXxASdGltZW91dD01LCBtYXg9MTAwoRtfEBQiMzE0Yi00MmUwNDBjYzdhNTAwIgAIABsAIgAvADoASABWAFsAagB1AHoAfADpAOsBBQEHARIBFAE0ATYBPAE+AV4BYAFmAWgBfQF/AAAAAAAAAgEAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAZY=Ubytes_Tue, 01 Jun 2021 08:20:26 GMTU12619_timeout=5, max=100ZKeep-AliveÒ/0fg_NSMutableDictionary£fh3\NSDictionary_application/x-httpd-phpÒ/0kl_NSHTTPURLResponse£mn3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‡  ¨ Ê ì ï6=_be‡©¬®°²´¶¸º¼½¿ÁÃÅÌÔàâäæ&/58AJLNU]hsuwy{}ƒ…‡’”–˜šœ ¢¤¦¨¯¼ÁÏØæëú}—®Îjp–«¶»ÑÕâü-             o              ;_-http://archive.ics.uci.edu/ml/assets/rexa.jpgO1KÿØÿà JFIF  G G  ÿÛ C ÿÛ CÿÀ  * Á ÿÄ              	
+ÿÄ 9       	
+!"#$9Xw˜¶Ö%&A38BC·ÿÄ            	ÿÄ C    !"1#AQ$2BR35bqu´7TVat‘”–²ÒÔ'Sc“ÿÚ   ? ëy†L,YX%N&ò²	‹Ãâb^’ÈÊ¨’«è4 Q¨¸~Iöè ºÚµhŠŠå4Tßü4Ïœh Øbµ‰œì 1$E?]„cŞgıQ×ìuÛ´ñµ!j½5W-µrÛ‚½jê‰ˆ–=Í!ZÂ&b9Do1ZÃú6=‰ÿ q»ÿ /Ö_û{ÉÈÿ ˜\ÿ –wşTÿ ”®İÿ §zGş ÆìôFÇ±?î#×åúËÿ ox|3#şasşYßøt)]»ÿ NôıAŒÿ ÙèşbÜG®ÿ Ëõ—şŞğøfGüÂçü³¿ğèşR»wşéúƒÿ ³Õ=oò÷Ksã…/®}¹©Q²gÎEÇZuÌ¦Ìù&M¾õàğî$#X$AãVÖÜ7m²Š¤ßù»ë?4º­šğ3b»‘;µF¸)ˆŞb9Do;{í‡N0ú§Mj9XA†Í2°,¯‘©xë¬Ë€1Ã]¬•ŸÊ$Q%íõëöˆæ‰ê#Rç9S3«¤ôLSC’a0AíH<ƒÍÇ±"ÿ GOYj›gOSQ²9Óu7ÙDÔşk¦Ûc:ônÛZÍx$–-%ÄL,›•Ao1îÈKd>ùuUi½*º­Ô™ºU]6ª£/€ØbÀ¾ {ÊÅ‹’ßhcï¼ÇRËÃˆû™À±•t1ÜÕT“ä†3•LaîÛÆ7$¿Ç‡8‘ÜˆfçÕ›"/Z9{¾>F‰-·íæ6)Ú©ÇÔ×j ç`–ÂSõãî2[o<wå´Lí·Q°ZßGêw²®ÔØ|Å¥µ•©Û²*«"»!nbÇxækıù²÷‘º´ôxttxttxttxtu<VY¦`¦íäÔ¥iu–;|h³¸XÚìËM™˜’ ×q#œãrcuÊ.&¦6~ÏÇÅÂ_6éCáfTÈ­%Â ^>P|›qåÎ`6ß~SõéSs¸DeQ‚v_œÕ¥Ãªâq’°©†”5Èáí)qr ˜ÙLŸ Ğ?4ô×©åkWX÷,ÀuSÂ$vÔ²nVa‹Ü²Ó
+½|·î›f#™'wxEû†¬[ctğ³6Q<m¾½kÙâ¬£s6’âôú‘Lì#¼Få1¼ÌDo3ÒœŞw¦ñìÊç²u18ä,íİo~VÌÂ’¸ˆ&9Ì˜	H1¥±LÂSËZ´¨¹‚õıÅ?]MbYHä‘‘$ş·å¤ÒËWÛ.Åÿ Û¯öÎp¦Š}1ûgLãÌ¦¡¦—)«ÛšËö‡Áÿ Ú%œLuPa5><2Ú%[-c‘·VNUæNŞdÌ0bÕr`AÇU¿šúqÑáÑÑáÑÑáÑÑáÑÑáÑÑáÑÑáÑÑáÑÓôÿ ı©%ş>
+ÿ LÊ<cˆş•Çÿ ´Çı‡×7ïù.×?Ü.ÿ _®ßüğ/½.îåêë÷îë‰áˆ7aÏ(.~¬­UDLİÓEÇ€E¤’Z†ÛÄÅ;l¬{_ÉŞ>˜ÍL4.ñë&O7*ñ~BÛmzºh®¨ğØ8ö…ùğŞ=§Èg#1¿_êhL&‡Ò˜ü…£œ×7t…ş É°rw…¢ê‚l¿fµ{~)²Ø8³÷Âª´–J{Á‹zUÖDìÏÄ¡Ò\¯Òv/?¸á(ìIj°öáH¶¶íS*Jd¢1®`1x¬chú %Á²Üà-ÉÚ®ÍÖ>w{¸EÒ	C¹©­U²Êó€•ó6y˜şéÇãÅƒ±Ä—´ûûïpÑfÍ7ª´Ö?PF»±j2ˆó,±8¤EZÍßƒª2-[õú®ä—,Â©‰Üx·é»±=“ğõwÒ¼ÉjZ¾¸únzDş™¤%²ê¾Mè`ñ¦;šû±Ìeådl‡ÊÇ¦éìRdÔT}øÁ)¤~G1x0ÆÌ	—rtWf³]Œ´pR”¤‚ÈŒoûÀEqóÄ	DlD<'®~Œví¾¸Èi½M‹ÆwLcß\3Yº•2U¯iöØ?OÁ¬©sÓ™Ud„Z§.xµ³éëÚEÀu~·«éµ½FzŸœôY©‚ò'i_#íR±ÌDÉ?VÆV›Åˆ64`ñLYº†p‚ãMØgçÆê|êï^Ì1íÃáÎÉ>Zøl²˜Ã` b”m´í{uß;?Ãb»·İZ:y(¯„V/ Ìbë0œKd)Ú[ÒcdÁŞit¢yü¿.Ñ/á6ÿ İ'\€0/ÿ D}ãıšÛëê±üs='ûZÿ AhŸïlßø<w[úæôW4úYí¼ûTµcwi«æGcWÜ¾Ô)VS…šNÁãZ°Y¼LHæÙ(ZÀIó¥¿M‰¢iÜÆ£6eºÚArïå­ğ€bşò7‚E€2p ©S®%R¥´Ç~©Zo€Ô}õÒ¬í^.Æ€U;ú‹Ôhq:v¼©ªÇ ¬TÅa“²ÖIª,²kºƒôùÅ”g!Pì$/_Ü–P%‹Ö|°%LªHqÑLd
+Kµ¬Â“2åÓ8ñpÄd¤Ë’lßRTÅ"fİ	tAÎe…ÅÑ]@¿ëìY´Æ%=¨§¸„O¥Yî)“#>dÖC%*ñOW\ßzu¶Uj?oß¤pØ­2çT;º¦æ>«óv«¹È/MñG)@6YÑQ)H-·m¨ì­C°=1ñ¥ì¦§æ»Êı·c¼ÅÖõiyO(ÍtH y&-Ü")•OjIƒn‹¬LAHÉc"İJˆ; ’N]8{x:Ášµ†µ`Å§WÏŠ1ã0é"rÉNãìv«’¥‹È&ÚãöÅ¤ºìiS½zË5ÛZ¿§ñVsZ_,ªšÊ©ú–$q° ÿ Šâë)Ü¡È›|ŞéÇBŸmbÄ1UŸCzMğ‡]Ö‡iİÒèÓöŞ*Î!¯éÇ`3¶7z» $¥ #³¯³°´Y²$Q&%zš29=ÖznLe´yx×0ÑF…PsFs—¯EzÕ–[ÖòÂ"LË‰ÂK”Xcöı\YY$>RhËM=Şì¹ÖXú:C
+¸Òü!eµ®K0ØñùìEgWŸ>ÒW[c+h¬3eR¯‡^»ôïê—œ%|ËÅvt9Nòê˜ø¥ƒªUÙ
+ş(‘»r;fâ±*Â²ÖDãAK±!# Ø3Óô‹q§Ù4f7W…‹VÏ"j–Åº™işÉ©0ĞKMifí€ˆäŞDT ï7vóØİC¯´ÎO×ĞZrÙ)´òAä¿b²¼&Ék½Bì ¯f»mz2¬„“¡5ÆÉ(ù!Ÿh<­_ñ?qÜÜËW–ƒÖík|‰/8|4ŒêòªÎ'-.©aÅ¾¿œ}†I¶ÛVì~İ¶ß[t¶]J¥Å.Ş®¾^:öØ•òË€ˆr-£‘|Şó´oùuô7lu>CYèl¥Ê®ª¯äÆñ=tVÅUM’·Q~%µ¯`ıÒ—&çÈ·öKAÆ¤úcìiSk*b,»Ú.«f,¡;CÏ8Ñı?ó?.ùüMìÛW
+}ËŠb%‚šë‘Ís¢Æï5tı«/Ñ*§.d¬ò">Ÿeø†g*€çãòòßf{²GœGËÃqY¨îÕ´vŠ¤X|{­7²»’ø‚Ñj…¥k¾¼oàC»h9“fç¼.C[H=húÇ¦&tRê¸®”%Wà@l`ÕúçuÓ9µ!ƒ+H"°_«¡R­£ÌQ$å£5H8ÑEŞ8ÆŠj‹`ğ•ò#7Z'¼Œ+¤oØ3DÀTK8ìR#¸Ìm<º Sï?zuQåp;44Ã\ü¶UTà½-E,Ù5Æ¥ìœú§Twi[	ö€©ŞüÌõWö¯kÕQÙ4ÜäŠ=SA¤ñ…šY!´Ô§FÒ­ˆ¿Aº
+;Ÿ…—"€äTA³Q&B3lùÓM}D“ËªôKQÖ¾[WÇ,díèf´Y¬Åşml7ÁDıßÈ¢ˆùº­w[Xguş†í~nå,mjwrÙZ¶’†Y‰v£¨Ò¢S#8MŒDIšöôÃ$8á·>sµó¿=„õ}ãÒ¶?-ÁäHW4ÿ ê·ì±{Ï†ÜPï£% Å54m«Y”Ôr'°¤Uş¾D‰f#Ú}5•&¥¦ÌÖM÷,"Å‰Må­È	„!–§ÚfÁğ(à$+X(˜E0CÔ.jİa¦òZg´šMèì6´·Jrú–i¨ÿ Fq–míPSi	Ç×U»×,EƒÜÒŠè7ÒÅ<àÃ”àİÉÅò©ÓÊpä‰œNc²œêBE"ü“À)9nÿ d“zÙğ™#?É$@ß.]êüqÆa¶é)+­^µL0éÜ(şÒÈ¡œ=æ¶“KT@Q$,b!Ÿ–ÏÛ¾äjë:Û/Û^áÒÇ+QÑ¬Ë´²8€ñT¸”©vMf±"Q­ÔŞ»t­¨Q$+m{ÅÑÒŠñ]÷£Ã££Ã££Ã££Ã££Ã££Ã££Ã£¦9éÿ ûR8Kü|ş™”xÇı+ÿ iû®oŞò]®¸]ş"¿OSñYØòÈå™ÆäaÓØ¤ P{Jükúuwrµ°òf1Š2¤œ°İ´‘Çvt`»‰m«æ$åÄ¤¶]å\¿ÕŒ!e$â¸†Øù}¾ûœG?oŞæb~±'3õ¸WÙORÎ3Zf- [º×bğ%êD_ÇØÉ«"Í÷¯cŠTjŸ×Mk˜â©¸V©«½íóuÑ}ÑIÌ‰Üœa<RşÑ ÌpxïgBâãV1ˆyÌ-öûHk#ØvgÁ›ì<kI¢ÙG6–*‚•¬‹7ĞÉup–Œàß„ÿ òÛÈ?.Ì‚˜!ê«®²¹^ÄêLîœĞÙºjÃk:1yx·›cFÜ´bŸX¹zvz/ÃÜ\ØTå'ae*–†o/fİ%Ğ>×¨KÍèIC¯=ôl°¤ùåt—¥ENÂ—A¤ Â	~¹œ]øk38C	«õĞ‹0ÿ ¶ÁGTÊY³–®ş$ŸOekEoxğŒ0@–CügÃ}¢>ƒû#w¬l´ÖŸí>¯—C§.å3z„f{“mêw«¼¹O¡¢Ø[±şÜJÓ?Y{‹§yø±†DqƒQlšl­÷l’Qˆè‚[3	v`³İ´Oë—$Š¾xAê¿ÃÇK¸S;(®Ûeæ®ˆ„QÚ6ıeÓíù’Êfß33?ëë‡ı“˜Æçµ‘4É…,Jàd¦›•óû«PÂ>‚#Ñ'ß@½ïÌ\ztë¨fÅaË
+¦‰ÄâÅCe“E›0vaûešDDvÇDX*’º¹v‚M•Ûl¥¢¿W_“14îV>M6ØK;OÇš`TÆn(VH[3!Æl«h-¹r¿fzëhßêàbôÅ]-EWŒ¿“±p[v¥/¬×¤´”M·$YÈ’È˜	)£xÚc«C×Ï³~D}Ç½YëƒØÌŒÛnkœ‘˜›çé¸x„hV„ÊPPú‘ö"cCK“ö-Pe¥_>Y†£Ùtx15n€áî!cîS~™^0Æ%ÕP„Õ²7ª$6å±PxÈ+è¨Á¯+VÄ¿¸³Öµşî_m«%ù ñ¤ ëÈ »¬AX6ÙjaÊÊÑ“Ç_?(ic,q´6å?í·…ïşM§¹££ûƒ«¸¦Òåæ­«ğ·Ÿ,²ëÈõ÷ƒF–¨Ú;—m£IœPHƒoàÖ@Qèt£wY÷wu÷N'3ÈÖªËWnb-¡P6Mµ¼@ZJà.)„¿*yğz<„¯§):K´ZóKj|ÎsMèm)®°ú•§{áZ¡Ì…¬î9—N}Eêd-¢÷²·­¡nÅ[ÕÁdï¼ãÂèÏXV±hí¡Ñ=•Ô÷_s,F&ZÑ‰]w„úæº>çrrUnüCµ¢uÃsB£çŒŠz&$Î\P`1m‚èTÊÊvñ£˜µ’¸÷ØE?Ot¸÷- Dæ™ŒÇÜºº˜kİìKKŠÑ*;ëôÏsèöÜ°ZwGi|.­Õ6.†¥·§	„¡‰ÄLÊk!jKBu72¼ZK.2¥yµ»½[csv?¶ö¡Î³z'\§ÖùkH§\E2o˜Ùä„Ü³1ŒXo!âÌàOëA
+du†Â„HÙÆ¦Q§$~#ÏodêdjÔ¿13”,•\…®¬ô­àõÖ7„H´` ˆ¸Êì¤š(•iÓë¾Øê©„!ÕZ'Sá“Ö)õtñ–*Yj[RÕÊH¸å•?;¬Pb¤˜ê6,Q|˜]´TÓÚg¥Î­±9/Ø_IèšÓ²9Xsm©šèâ£Ì–}SíşıîÂÃåX´©Ù¢,æĞé+ ¯].9ëí™M¡dôñd«fD­&Ñ@¤“"["L²ÖÑÅ£Uv>DKF ¡&ÁERŸk;Û¦ğš«¶¸Diì–Ôió›¹a*.5FÈ(\¥vúêUKê6k¥Ã$—­$Ëd¸û£}Uõ¯µû’ö±&Vœ˜fUŒa›©3a¸îÅ­øˆˆœI“¸0ø«lO1^$|¨´¼H§KHõ(¢m¿+Ø*ª§[0oÉåİr_5œkeB/"|˜¢Ù;Ì&Vhòq.3ó—ë¢at÷y´§h´æMSÃÖÕÔ²–%µ\ÚàíërY‘?‡üDn¹c1I¬G9sõf¨'Uót?Ö·drÛYq6ö™nÊTqÕ#²m‰ÁÔ‘WªF×''Ë=…Œy¸HË½œ ]ÚµYpå=Vr6×7ë–™©#/Z« ö‡Œ¸ğø’,ÌÃ6…Ïİ	Ñ;ï~³Ó<–†Õ·»Ñ¢u¹QAa±zzLÍÈ¹P¼˜ãrê¶
+¥äóµ~ªêàM Kâs#<f,®Ùíîlº:W×Í‘]Í‰ˆP¡IÚdD¤AœÜ4òt&Å»ÓßD`‚i‘	:ÂÛ¥ª	|Ê¬–»1¹–¢İIK"¶ÔK91’¦ADCìŸ²æ9ÏÊÁŸhßßoÏ¤]¸í®±Ó½¿î–-E|®¨„aP¼;³çÃÛ¦¯-„´•W{ Ÿ9Ñ<çä‰´ôÙO0ïÎ¦¾]Yô«íe€Ö°³z×ó˜ø~f=È-d¸Æèğ$ıª,Wÿ ê[o4£'Mvõ+‰…Ã#Rº©Ï‰›±‹¦J((ÛuÇ“Û‘íÓªîÏwı·íæ^"¬å´ş¯Ìå²µş-€E®À±.„¼ŒbwRŒ˜½Ö8â¾»å'üfpod“B RiSé„Îˆrk`ÏH‘{é>H[B‡–'™¡/&£ïƒ”Õ·ÓGuôÑ¹~Xœ‘b®pIzÆN?kÉ<`ö5°Ú²‚AÄA	Äõ}î.ƒ×u»‹î—o+RÊäET2xk¯
+òáMvÒ™_ˆ[«[ ÁKvj³Ğ<|zÓ¬9J/ÆpîãyºË‰#5JuaZó1*Ø£ÖÆ]É¶h)›¶"> Xò¬•t³`ÌC!¸æ«véuÑÃ-¨ÚtqtdÎ­9†K™|Ò;í?Î=®añSÖŞŞèMog¸YnéwµFFÅÇc0t6<etRæò[l-I¯QRµÙu‡Ù{,6""IëÄ}	ÑáÑÑáÑÑáÑÑáÑÑáÑÑáÑÑáÑÓôÿ ı©%ş>
+ÿ LÊ<cˆş•Çÿ ´Çı‡×7ïù.×?Ü.ÿ _®ÔäıäÜ6?Z–~”¿RğcÚ¢X¨-«-[\˜JXšrQ*×UéhâhjQHDª*"NDKÑrÌ¤­²Âëç\ÚNg‚Ö>ëF&6İÔä£—ßëÇˆÌí¸r‘‘?•´şCQv7ÖX¬Yft¶¾ÑØ¦Ÿ˜‹ÁŠÕ‹©É·!²&ÁØp(¼>¶µ§U[A• ¡J{Hìş¾®:Bç^=£oşFç^‘eÎáu4ìOüG—Åô\Nlólå¤â$u›’¢#¡Ÿ92œš6~G"“nàäİò#”enÜ]”Ö¤‹ëãÊ=0B˜>Cãå!Ûf®`¦”É|Çòõ®Öè­!’ÓyE¬3˜[¨µÕv£¸Ìµ&ü6¥™ğµ˜
+•¤©Ö\ŸKf½dVM“y~å»no÷±ÚUôÃ†ftÈÿ Ö]+HÎ"+GÙ]Öµ|Éjlt1ÕYHİ¼w#nÄ”5¦â’Ù#‰EÌ²EĞ%É?oéê¿Óg¯,èbNÕvsWì“/›Ü¶¹68	Fã¼òEêY„IØ­§®if™è´ŞnÈ°xLV@Êrõ,9uÄ¹î4kcZVí(È^*Zä÷‹Ò§{ÖW¬¾šŠHëŠëèIS@íª˜úóQ‘ K-¦5ÕËÀÑQá†yŒ|¾låÖ?õ¼Y´Wqx«F<%ï°|=·Ù;oˆ@ÄÏã13×FìnšFîor´Ív“Ã…ÓÕMåí/±Â›mº#yâ-´Ç0yà!øt‡9Ş½êÃ3´è~}ªú©ñ@U’	²ùl'Pmá4Ø,°‚êCt ìÊÍk¢	šÙ-n¦ãškª*l²È­YVf`dá”âß‰¦"bxo3´Ïãíùuİµ®7N_F<õ¥Èi¤¥Ö«éj¶éQ´Ö‚É‰sBÅqºKÁ©e$H‰iŒD0úcåĞ^Åúå´ùß8pg¯I:Ãp(MÓÃ¼²	Ğ—²¬ı4-»Ii(úæŒŞ:i¡Âh@“—,m£o®¢)¨Ê»2–”ÇWÇãZµŸˆ¸Ğ©ÊY–ÊÁRPÖœ.9ñXñëœêLmôƒqÉÔš÷¸xÃËÙFOZê»jj`°ö6 =uë¤­Öò>Á-Q‚å´NÙ­h]Õ}Zºå^nUèÛ­ë¢›Mes–DA·O`ÿ &G¼×-oõ_5s¢º)ü>A³Ù K­‹8ln¹j
+Œ†ßµøñßoÇ«Dv¿NO9ı,×ÿ t±kù1÷I8äoë?v¦Ì> Cî31×_i×ò¹p¿.zëA»'šzå]ô²-Ùß\ï Ç‹¨'TZßMs¶ƒœn›İµÆsªÆ<Ëâ–>¾—´ÏŸ†£i/á‰úI~<~»{í·^Çk4ñ€ê®à‘šüÀÜ<Ô™§}¼À1c‘'o(Ä¯ŞëÉoi ßu’qË>»[*Ûã—)9õÛL7Q®5×möÙÊkÓvúë¦›ï¶ËcMuÓM÷Îq®›gäìÆûÕÆFß]ñ¨öÛë¿åĞ=­ÓÇÆCUwàöá!Ü<ÑÁï;G	¼ÌDqßŞcóêÈÓ»{/z„õ-õõ­D&z"±!4W×½‹VósÑR"?,Y¦‡lö&)ù½ 1Hö[çUJ¦¾é%¾ã·}uÕhèãsë©…ŒDrue©Ï?´>5½'$C0Áã3;ìª4F‰œĞéØÖÚø³%,¨ÒàgÊf€\Œy7ÍšüâáB=?—ÔóßîxÄÏUÂÒºÓgÏZr×®ÇlEèŠ¥4õßK:b)'*}Ê”z€•IÊßÉn«åPÑu¿”–Ûïü>iø™‰˜©˜¬Æ13ı³ôÿ ş½5.ÖéåšÖÍWÜ±ÒP•Ÿpó@ÇÈG#,¬A¸€~c…‰H¹mjJÊôöGsQÒÎ«8×¬Ş˜„9–4’ËDpï,jéšĞAäO´‰>&Îfm8¸'íLT|–‡o»ú¢·É/Í“ôs~1øÒ« ÖËGT¶Râsep^XZ™ìÆHq¬ÎÛOUL†¶¸C[Jäµ÷péç­ú/OMºÓVxÌ²RCAex@¨)·d¶Ù3ØvÜ£¬¸´…p«Dò¯¯%Üa‚ÃÛ#ë¦›UÉ;'²Ø,Á²a¶]è¬¢šŠşdÙ5Y}$÷SëüšmœDøæ=&7xSNğ?^Sı]½ù~ÎŞûíÕª{_§HËVëñ o‡=ÅÌ@-ûñğ0ıO-‡ÂSå1w˜êsUwÿ \İÓèEaUñç®ù|âÉ>ŒZ·¯êr)–Ÿ -¡Ã-‡ IÂ¬Ù;s¯İ”nŸÑn¦ÿ ?Ã_7"åë-ZKÆ·ŸŒ~^9øÔn>2S<TsïÆ?³¥Ù	£tş:öW1¬ûƒN1BûÍ}¨uÔn]q2®†6ÄÄ½«_Ê¢ù‹ßh‰˜‚:ö™²øeç.úçk¦Îˆ2IuızÒ)´rìK™nÍæÃ0Ñêƒİë–ï0Ñe¾İ_†ªg\çã—q‚Ø5ñrb‹á©ˆbÊ"`ÇxÇiÃ}§ß¦qÚ¼ êá‘¯„°¸9²b¼ƒÉ~P‡É+È>áäå³¿UÇì2Î»+™=_%¥¸zF˜üÔ|RUö ´Ã˜q=ÀN£lô9ÙwQhMF;é³ğî
+_9hı}vÁ¹¹f¢EƒˆŞQIJllPQÅóG¼~XŞ:o†íæ3	‘­”­šÖ×ZYã¯–ÕÙ|9²Ô±3(Úd¢Ä@²MpÈù+hüË ö×u¥ZW¶í»FË ĞKQøp‡„İG\È“†%#%h„î4úGXØ&’XØ•ÉõtÎPßO0µFå"HÚ®ÅùÂÂv#æ 5F’%9j!a©°("¦aµîÔ7òXÌ6z¥ëX•ïp
+ª´)áU¶}éUUÕe‹®ÇU°åXËæœ·ö¯3¢ªá‹ü¤İL¢á\1wô›­…ğ×(¸Wèı6ëaÖpÓ)-¶ŠaŞp×:ı|á?"ıcx‰˜ö÷ˆŞ=ı£Ş?9ú~‡VÎkŞÈ¾Eˆù‘|†9nCÃçåÇŸ~>ı{tMG	³HQe^¬‚®Ğd˜¢
+=]¢S+¼A¦²åfˆa²»¤’İº8E_ª¦¿O”Ú)öSí>ÃüSùõ¾Ÿëër dåè€ƒ…ÉË•-¸®NKŒ0¦b&yÌÌmñÔêº¨-KwsšUõì®uˆÌ>K`Z>-GÅÂ!¸i™lÃõ²ƒ…Ç0ı—æû åe™ıÒ?:?ÅûnUkƒ%$ÌV+6FÂ Û
+¨²’£‰ZzQ¾ûC0[Fó²yÜ6kW'NÜ¸œuU½¿zëÖç×ª*6‹šïbù€‰Š`ºàØ¥ULfı‰7˜×ò…á3P¯èóôä½·Ã+Fß©›–Æ6ÆSjÌ›¬¸×?3l­¯ïæ¢ !˜!kPQ·ÑÉ™«¤šæ&Fgóúm=n¡•ÆåjS¿½ZİL…5ä)5lã6(¶"BØ)œ˜˜f¡ßæã=DõOu7GA%·Y&Y$ª:Š!²É×?.ÄÕK²¢C5Ûøv"¦º²×?¶WÆ|ói÷öŸoyöúDı&(ŸÂgÚ¥Ë“/D	3Â%.\A»ÿ ¤'–Äïÿ !İŸÕë‡çmèğèëXğ…ïåşÌæÎ‰Ÿ–…S–k)œ˜lM£òW¢Û‡2?t2&H8÷/²±vÕ'…X#”õS9q®Ø×]¥ĞxV»VË ¤ß!@íÊc‰GË¼Äo¼ÇÖcûz©kÌÍQ£u&Ç²º®æ1§N³-™…`a5GÉÆ¥¹‚û‚™;íòÏOBsÜ¿‡Ò}~Jºx—8{xË§åmóè=‚F
+\tÜÃİ=7R+Óñ[*©¿ÑL?Ú$‚[eôÂËññİÓÌ°v¦¾H^Æy¥€â\Ã=½Ã…˜áôúÑõö÷¸U	ö¡€«¦©;xüJ	ÆÔòYI´X‹Zi¾ 6ååÎw’ŞffZ\ñ>úõƒFFÆƒwD©!‰aN#•¤šLå=q®º~duİË«ÂJë®¸øº{²ÎÕÛ;(áu”ÛmòÕz£±áxöıæBˆ¿Ş^mçıırëßfàŞ²ËSCU–Ï)M:Õ†ÁqıPØ#è#íÒñêg>û>FÖKÓ5W³;UanVuVÄPT2*ªúe%”‹Áã$Â©gè®A˜}	ºK¦éêúi®0ºÖOtùÚVM»oÄe¼Vÿ 
+ÆÄOá¿[oïï×CÓ°ïvŒ®UôÎW¶˜¨`p°åc¼·-DLLE«¶4ë­>"cql¬'~ <§|ìï¼ø‡¡ùG¹C‰+kÖ¸òäÆnY˜û™¸u³¬~V$º4yµ‡;4]öxåoÍ·o¢÷Õ4\o„ÓCUÙKôlT¥RŠŞµÔ3˜‡m?)ÇíyE<§yåÿ ¯İ°Ğ:ßNê½]ªõ¶O’½©éÑQ³O¿¨ÀùØ“ÇÑJƒÀ°•ò’8™!Şdº_¼oÚ–‡ÌfÓz¬&@Rye.ŞrĞë¶-†±6‰ä—  WÑîÎĞÕ%6páÂo±ª©ğSÈxü‹±¦Ö$VRĞ…—’
+ch.Q·}ÿ =ú¹w·8^åcñ¸Üİ¬•Dbï³ ‚Æ²²Øner¬BÙµZĞJüe3"Ë÷¦=ºÕ>¶=•Fx$EÌ‘êuK`µ«ró]†İ%Ñª *†G>!4XbÇ·İø+#'}QËÃ!ºñyx†oŸ¼jË+}yTr¡V¸×4ó‚É¶´`|éK1¶(Òlš.¬Ÿå["`pI39ê¿Ü®ØÛ×–pî«™ŒPbtö ÅDr³jÎL±¦Á Kµˆ3ÅørõüõwL©L`K÷¿ÎèÏ<Ãaıÿ R¤Ë3@(ÛvƒâQÛ4+^0©¹$Åİ–Oë¦®­Â 4‰‘,ái{ô'Ê;»Ìu^U?Wj•^¼×ñ$
+@F™CViU€'ŠÉD¹"âM=ÍœÂß`µ=ÇêKvó:zÍ¬ËlZ3”¼í¹’£’f6øª«øÌYT%bÔ_L ÔÑJªpŸÄÎÑĞd€äYçØiÊ¬·¤°Ü6ÁZÀe÷\~Ù^ug—“ i•ûĞcÄb2dÃMUY´Y«IsxĞây‰:Ÿ©˜Íwó$ÁÃV;]³h/WiÈ˜äv|KHƒg<'ÈâYDû<ê;6«qÄMÓÕ1Á”JnÒÈcìTÓñ„ŒUZõVf›|ŒyëùêÁUeŸÔfÑÁÍ?vûÌ‹†FGzYÜ¬ûNhŠX3n„‘Õ]5u/9»ÏØğ+IäDz¹tÒã‰ÚÌ!fv?t÷-fN>İ²8ÁHÌÎñm"®/4ªŞ)ÙÙ•LäëP¨U¬"ÄˆòºP‡°¸må”ûN1=…¹ås3w4åp€ÕnÃ§NÖÊ¬tŞS?ğcÇ]ÄEÖÁyVäÁ`òI†íùÓn¸ü@u˜i÷°]0ˆNï–E™µ¥kñ,éù7rB“åªèx6mZ²¨avş+Œ²7²\‰¾û·h¸Y«2OP®k•Rœ…ÀgÇ‰í¼UI¯<µ EH(PŒBñï$òD;ìE¸-j‘ö{Ë,?EãîQÄâqø¶áëg†KÃ^~¤´Û,<¾S»RÓE×B ÙÒ¢{:ãçš"ïç¨+X+ˆMú3fnäœ”<?
+Ú2ıXûÜ=lÛtmn¶&Šyÿ VƒB;(¶èªälT«b¢ár»#Å’c2q¸p™	Ş>£üP[OÌ;¿]ËTvïOêİQ§5fLòa‘Òï—c•Vç‚«6·ëT6—ã3û»•f×7¯õw1TŞÆå”/Bù¦™è¾¶ly¥€n1³7QÚğ8¤*KWEfc!-avnn5 gbeH¢ÿ Wt4”ŒÃk#]Aª¾¨2`Ù
+ÏÉ#!è¼±ÕÖo€WmFìÄ¸Šl·l«gµ®cTemS¹…ÃSÆÒ­jú–_ê¦¶^Ítµ4nÍ'X‹Xà›ÃapR??NOø‚hiD¯™Õ3[|C¦ªåÍ4Òó¥Ü±k»ÕSLË’|İ÷9ÎĞƒ­™y¬UC;a°Ô‘üÕ¢Î?I+úŸ7†Ìñbû°øUÇÛ<uÉ/,;ß(„nrjâp
+ñ ñ´}õ|ŠrºZí€;(:7#4x,€ÙÄXÄ†£³LKFlMÚ¬¾XÎ~kğØÏÓ”{ãç(ƒ*E	¬g“P¬&Ó{ê9¡y¨ìo¦lûvF­h‰¨èãeºhdl2¹Z¼ˆ¨Á¦_¦ªnÇµÓñÊÉ
+	…5ÂÇ5²"8ö+”ªê¸Ø-É}bóiJ•2-öÕS°Z“!úH‹ÙXï×3õ¨ç,‹ìç5M{XÜ%Z™$=µ×€›4‘]reeƒ%ğ–®nñö‰TugÔÜÑZÔ“ªß02•¦ÎJt„Å™U±é,u3µ‰pïĞ2QejTy;³Hœ|[çŸH›¹—‰"¯'‘]äPJ“á¼&VP$5øQ]8¯I‘0QSpåâ XDBæ‚9éı¾ív_Hêüæ¤Éehd~$¼Šsy7o–S ¬„üb»‚PØÇÈ’j7ÕZw²ˆ%
+‚OK²ÃéÓPÑ»WHójuØGÃgBw™ŒÉ`ÃË2E+Îÿ *rM²Sşİkœ£ˆ°ÔÜˆa»„*ªZ~$pºA	LM%Ë=¹IÌ!ûÿ 8^Ü~‚ŒoÕã¢QŒÔš‡Qü[)hµm%ØÇ’ş‹LC±KúÕaø[?Zé¶ ”1-ãkv÷¦ìnÈJ­ìè@tÅZj»»Âìz˜€ZFJ·ioòFN±Ğ÷ëñA°S‚AõD$“A”h©]Õ€d¨)ù#âÕã+çsØRv)Ùmš–v¤f2›éµ†¥…U¢ ë‘—hõ·èÆHSD^ÂèûõìàÑg”Aj:k±q¥Õ°H
+Ÿ­Å¿OITÜJ–æñóêä–ûü¬ä»Î‚´€V’–7š“(+2u‚¬§Ó¹ŒŞ‚?T[²ıtnÅ³‰ø!õm†fjá‚šk8´ºêA²+‘MªuUa²‡3C]L]ˆ¥^UÕ`5Ag$‘ËŞ"i—¤‰)ö~ç}'­öwËÖPjL]¬š~ªÙ;	ÊzŠØêšk9ˆÉâ•<™1JÅÌ–4ª‰IœĞÅˆX!a
+º•FÅh¤ıôÒ{O]Î¤NV¿Æ‚·Cº¬İÚÕõ{2éVw]1XEôÜ¸O¡q¸5Œğ)í˜»Àæ#¤¤¤ÚºFò"Ç¨šÕVëCéÍ:™±S"abU™^êRC·:Û•f,ãh÷¾ÎyY¤qù¬$U	Ã°°Œªq6®«JÕÁfrÎ U†¯"ìš¬åh¹iòÛdyjY(¬{Ñ¬İ1j¸ÈL×­sÍ¡DK¨J¦MNA¹¢j\:G¸ë¶œŠ
+‰q¶šHQ›ù«CJèK'Ò=Eë q¨o§ˆê‰3ŒdO§MT[Z+Pm&cLC"µÌS¡`8»<6X±˜±ÂåâÄò_ ÊZ–v)W1{Råk	»Ÿ¶ç’ÍU+˜Å#¯Ê\úµı2ü¢S|{íç¯ÌdåÎìI‘KRs"^•nj©N’—œôŒ.økxM†e-ÎmÔ¸H²Ğ3öo^Fğßq{î|hÄ\´×*úŠª,Ö²Uî4U`i“ékø³VòŞ¶ñ‚Œ…•ÙôòOne&Ï“Šóû=êRPÕKƒ‰J«†sÃ•øÚš"zcôxOù‰Òn°5Ä.ÄI¶&©º`úù=öÕç˜Ï¸*ûşpzgR]uI•™¬‚¿™Æ¦W=Ó?©blP„ÁO!‘ÊÚcE!î3Ü¨¢ÆJ2y:İqESˆYÁf6ÅVƒ™møúuXß»X¾Õz÷VZåÈ»Ç½Ò8Dƒq$‘.Óv*‹Ø¶arzOœÆå’²^MÃD‘ÓÕrO¯z¬cìÙ¿ojÌ|6Ôayq­×XFÉeÍĞÎuÎQA$³1ğ×9OMtÎuÇş5ı¿lãW:úŒ§‘Lÿ Æwúş?Ûøõïğë¿ÿÙÔ*+,-_application/x-httpd-phpO2bplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯ '-.4567QRSTUVWXYZ[\]^_`abcdeijU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_-http://archive.ics.uci.edu/ml/assets/nsfe.gifÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÃ3²½j ÈÓ89:EPWNS.keysZNS.objectsª;<=>?@ABCD€	€
+€€€€€€€€ªFGHIJKLMNO€€€€€€€€€€€VServer\Content-TypeTEtag]Last-ModifiedX__hhaa__]Accept-RangesTDate^Content-LengthZKeep-AliveZConnection_jApache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips SVN/1.7.14 Phusion_Passenger/4.0.53 mod_perl/2.0.11 Perl/v5.16.3_application/x-httpd-php_"a51-439f43bbeb500"_Wed, 12 Sep 2007 18:17:24 GMT_”
+
+YnBsaXN0MDDZAQIDBAUGBwgJCgwOEBIUFhgaVlNlcnZlclxDb250ZW50LVR5cGVaQ29ubmVjdGlvbl1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFpLZWVwLUFsaXZlVEV0YWehC18QakFwYWNoZS8yLjQuNiAoQ2VudE9TKSBPcGVuU1NMLzEuMC4yay1maXBzIFNWTi8xLjcuMTQgUGh1c2lvbl9QYXNzZW5nZXIvNC4wLjUzIG1vZF9wZXJsLzIuMC4xMSBQZXJsL3Y1LjE2LjOhDV8QF2FwcGxpY2F0aW9uL3gtaHR0cGQtcGhwoQ9aS2VlcC1BbGl2ZaERXxAdV2VkLCAxMiBTZXAgMjAwNyAxODoxNzoyNCBHTVShE1VieXRlc6EVXxAdVHVlLCAwMSBKdW4gMjAyMSAwODoyMDoyNiBHTVShF1QyNjQxoRlfEBF0aW1lb3V0PTUsIG1heD05OaEbXxATImE1MS00MzlmNDNiYmViNTAwIgAIABsAIgAvADoASABWAFsAagB1AHoAfADpAOsBBQEHARIBFAE0ATYBPAE+AV4BYAFlAWcBewF9AAAAAAAAAgEAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAZM=Ubytes_Tue, 01 Jun 2021 08:20:26 GMTT2641_timeout=5, max=99ZKeep-AliveÒ/0fg_NSMutableDictionary£fh3\NSDictionary_application/x-httpd-phpÒ/0kl_NSHTTPURLResponse£mn3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‡  ¨ Ê ì ï6=_be‡©¬®°²´¶¸º¼½¿ÁÃÅÌÔàâäæ&/58AJLNU]hsuwy{}ƒ…‡’”–˜šœ ¢¤¦¨¯¼ÁÏØæëú}—­Íek‹¤¯´ÊÎÛõú&             o              4_-http://archive.ics.uci.edu/ml/assets/nsfe.gifO
+QGIF89a= < æ   NMçßÏ¤†Ku6—µ§ÆÁz³²8‹‹µ¬‡÷ÿÿ¸ÜßE¯ÉQœ˜|†ŞÒ»¿öK””êñó­œjÕÎµ½º¤’ÁÃ¾î
+‰™ ff•|G>‘Íåæ)c¦¨™ÌÌ:Ôÿ¬Ñ® {½Í¼qqêçİ!|z¥¶§¦”g‹»º÷õïÉş›ŠRäÿ•{BµškÎÄ¦}z ffŞíí´ÖÕt«¬«Tmr¡ÁÄøÄßà¿ªƒÆ¸˜ğïæöùøpÜÿİ×Åµá›„L­ÑÖ „•¼¥t4…„Ì¾ ¥Yæ÷÷´¥’z9•¿½°’eq°¶yÅÒs}À³Œi©§tt’­¾³• [Z^•BY™Şêkáÿÿÿÿ±ÑĞéäÕÕèè«sA‹„´¸§ÎÏÕĞ½œÄÆÆ¾¡ ÌÿÊ¨|ÍüÏÇ­ „¥ÌÎàä)„…²”Y—…K`ÖùR“”Ÿ·xv»œgáİÊ¾İà¿®³Ü ¶×ıùøøñæ½×Ôíîà Œ©ïø÷!ù ÿ ,    = <  ÿ€[‚ƒ„…†„j^„z‡‘ƒ
+bƒ09…9Q‹’Ÿ…U•‚j3…4 a„(2 ±[^ƒ%v‚E•ƒ¾ƒR4`² Xƒ0#[X%Â†^Ä§È^b%Ü®44[l\l°%|9#µ=4dİ…RÀ´3ddÂ¡
+%¨©¥™÷ğâRÂ˜*«j9ZÀ‹fŒğ…">24¢maĞaŸNR¼‘ ‰LA=4ÊŠR„![d@¨5aÇ#(JZ¤qä c@0EÚ‘)Òã)	¶,™smKš
+õ¨¢Å›7-î(Äƒ#Î%ÿªÒÀ@Ê“—‹zŒ¸EÏ‘;êÔIC%I	AYq"	•	?^¬P²)*ùBŠ2…†(†¾(!I‚*Yª‡D	£Íò(Ä&¯?X0¨<ô‡LÖ-(0”âo†a	í $@¡-‚(InH¤šà¿Eh“Ò‹-ÂSbÅ•„ú˜¿¢ÄJ£B0,9 #
+HltĞI¨•¢Ç­ĞÇ )øÂ1Ú|‚!2("†50")Q€!u|1à'\±Â
+³m1AG)|ÚXaÅ
++î€À{ƒÃšÂK!+
+âÀ	%naÄ)ìpÂ€t!Èÿ?l‘ÄzÜñà eœP™‰]Q‹(ÑIUv`ÀA©…MeàÜ ]Ğ´EI¼ptêğc‚ z„|ÑB@gX´aU‚EB1Â*)”Áœœ`H¨Mà†PPà)D°ÃlI(IH£)D‚€…x!ƒN2$ÊƒŒ^Wèpåe¤ñ"°°€*àQD@QÃwBÂ_\aíÒORğá	lJ—qP† /ä7ÅXğ »0 ‚GŒÅGŞ®=nAFjpRÈ^,ÁF!¼Å
+ÜñÃ$!ÀTÑÀÿ €` \€A7Ao$¤@{cìğF¿v (N(@P„^ò…A}œàæ.¤Q±4 DOaƒOñÄ¼¦&qÂ‚œ`*!^„,2Œ ƒÂŠz„@Å/œáDG£=4Ñ<q7Ø FLxÂËeğ9ÉPD&2`1Â2…ÔÑ!”á‚S`à8 àğÀä€‡A/oQG…€qßÜ$ˆRGFÙL~ mÃf¸K¹ÇGcŞ†J)ÈVø=ô „ÈÉ <d`Ä {u„¬QÆ7X@4å<»	586ÿA´ƒÈÀô ñH '(±'¬ÄÄª€ÃO`ÁÚDÃÁö„ËaÀt Á$°‚#àËZêC¿Z…(Ğ€vH‘v%J•(0Öeƒ!D.€@°À¸”hÀÎÃ¤!døÀ†TĞqĞÃî ^±gch„D ‚áÀ˜»\Ö@ !mK C
+R†®@\'xö 
+6J@Ã(à?˜ Np‚ôÛXw=ÉQ®€O(€vğ…/¼ <0Â ¾6t`˜šp¹ÄW„8A¶Áƒ0áÿÈãÿöø„¡QîO¨B&„@Moø ÂĞ;€a A`€å"Ï#DŠ˜…Sš¡qÛŞä,0?hõ*„¦46ğ!9ÈêÑô	"'€¨—Gb€ l¥T ‚ì!N„0‚Şº¶ñÀ
+èéBpJ <Áv§œèÀš”a!˜>é¹P
+t(&å04u>Àw`Â{H0 tFŸP &–j)!e(Q<Z@„/­"t €Â$¡ßY&¸.ø'#¨!}™åepN¾àø@JÂ 8Ì€ÿ€ÂL¶T´ìk<A©B	‘ËÎmAW»2Â+û’=ÔADØ	rIPànXJ|×…±çkİB¢0:HôÀûÀÎAU n ‚dép„#”(	y:Õ hVÅ¢mqØTÖ¤_>(!ØA
+0ÅƒÕöáRÛÂ¼i¢7¼`‹}@Àd@#oáıj“g·p˜ÌO¥zÓ”Œk„Xa°U¨ °Àƒ=â4¨B4PCğ MêÂq06A”AN
+¦çH–4 é	CêºB4ğ†º…¶8í8ÔÜB „_¥aWGˆ¥!jƒ…Ì È;Dÿª¢Y9bP`4€#ôvV°Ö æ9ˆH¡
+à‚*tˆDU Ùùæz®PÚA¡–"Ğ”p-YŠ…ù„ú8Ptn
+zƒ‹R›@á8A€´BPÈÁw2¨€/…`OôCmX!~P©:èA}0€³\ái Á{Rp°b%0Ô6?ÑÌ”¢»ƒø‚x*Ä]eÖ'pì°ŠØ .Ÿè f †l•è‚tûdÃGğ€µÚBF×ƒ¢HH-f€ƒ¹ïöİ!4€1` |(ÁH»ñ‡9t·Eˆq!XÉÓ-˜ƒ[ˆ,<®P‚ Z"48@P0Ôâ4JA>ĞL%’„Y»a /İw– Øá1"P1èd€Åì Xb–N8†D5„h‰­!P N»„(A]ì°}'o˜` ‹&,£j˜nÚàKØÛáŸ@hl€•-|6Úæp€ßxÁ ã9$Î!`ğ èˆ DrP]È‰ŠæÔà¾o  ;Ô/012_application/x-httpd-phpO8bplist00Ô
+X$versionY$archiverT$topX$objects † _NSKeyedArchiverÑ	_WebResourceResponse€¯ '-.4567QRSTUVWXYZ[\]^_`abcdeijU$nullİ !"#$%&___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó()$+,WNS.base[NS.relative€ €€_2http://archive.ics.uci.edu/ml/assets/rexaSmall.jpgÒ/012Z$classnameX$classesUNSURL¢13XNSObject#AÃ3²Äã ÈÓ89:EPWNS.keysZNS.objectsª;<=>?@ABCD€	€
+€€€€€€€€ªFGHIJKLMNO€€€€€€€€€€€VServer\Content-TypeTEtag]Last-ModifiedX__hhaa__]Accept-RangesTDate^Content-LengthZKeep-AliveZConnection_jApache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips SVN/1.7.14 Phusion_Passenger/4.0.53 mod_perl/2.0.11 Perl/v5.16.3_application/x-httpd-php_"206b-42f238e80a900"_Sat, 28 Apr 2007 03:07:48 GMT_”
+
+YnBsaXN0MDDZAQIDBAUGBwgJCgwOEBIUFhgaVlNlcnZlclxDb250ZW50LVR5cGVaQ29ubmVjdGlvbl1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFpLZWVwLUFsaXZlVEV0YWehC18QakFwYWNoZS8yLjQuNiAoQ2VudE9TKSBPcGVuU1NMLzEuMC4yay1maXBzIFNWTi8xLjcuMTQgUGh1c2lvbl9QYXNzZW5nZXIvNC4wLjUzIG1vZF9wZXJsLzIuMC4xMSBQZXJsL3Y1LjE2LjOhDV8QF2FwcGxpY2F0aW9uL3gtaHR0cGQtcGhwoQ9aS2VlcC1BbGl2ZaERXxAdU2F0LCAyOCBBcHIgMjAwNyAwMzowNzo0OCBHTVShE1VieXRlc6EVXxAdVHVlLCAwMSBKdW4gMjAyMSAwODoyMDoyNiBHTVShF1Q4Mjk5oRlfEBF0aW1lb3V0PTUsIG1heD05OaEbXxAUIjIwNmItNDJmMjM4ZTgwYTkwMCIACAAbACIALwA6AEgAVgBbAGoAdQB6AHwA6QDrAQUBBwESARQBNAE2ATwBPgFeAWABZQFnAXsBfQAAAAAAAAIBAAAAAAAAABwAAAAAAAAAAAAAAAAAAAGUUbytes_Tue, 01 Jun 2021 08:20:26 GMTT8299_timeout=5, max=99ZKeep-AliveÒ/0fg_NSMutableDictionary£fh3\NSDictionary_application/x-httpd-phpÒ/0kl_NSHTTPURLResponse£mn3_NSHTTPURLResponse]NSURLResponse    $ ) 2 7 I L b d ‡  ¨ Ê ì ï6=_be‡©¬®°²´¶¸º¼½¿ÁÃÅÌÔàâäæ +4:=FOQSZbmxz|~€‚„†ˆŠŒ—™›Ÿ¡£¥§©«­´ÁÆÔİëğÿ
+‚œ³Ókq‘–ªµºĞÔáû ,             o              :_2http://archive.ics.uci.edu/ml/assets/rexaSmall.jpgO kÿØÿà JFIF  G G  ÿÛ C ÿÛ CÿÀ   Œ ÿÄ             	 
+ÿÄ -    	 
+"#!23ABÿÄ            	ÿÄ 8     !"#1A2QBa$%3R‘CSq¡±ÿÚ   ? Jİ3é6ØïEßaÑu-£RÓ
+ÕšÄİ¿w³î«™TBj:çkPœÀ›ÈßF6bĞiÉÈáÄ`0 ©Íˆş<ät©6û¥‚R©{	ÇÛXª
+fK‰m´–ÿ ç~¿Yõ¦¶ÅhZXûùj¹k¡•É"\-1¿y×˜–Ø äôr‚	6ñ	ß¦O®ÿ ¿w6úóÛj=åĞÍ¨©Q˜¯jÏ\v-ÕÙrÆÅÄø Àêæ²b(†å<MÀ³K„ÿ ‡,dæ>0Ëy(½9qÑÉ(8bv’U‰dDÿ "¹úÍ2¨Í‰`++ƒ×x¶´;Š^GO"“<dÖ2K#/Cøß~º{øó÷3Nğ«¿Øú£‡¹ŠNvOeZQøsXá™œ*ÊÉ­WbÃ!0“ÉÄ^eÊsÇ)8Ç}ıxİ;mû8ôÄïÇ»fWËhŞvä¸‰ñÓñÿ ¨—îü'¯²2ÿ ‡iÅ]ìóßwÛä™ÛåÄ¸òÛ~3·Û¥}Ü>¨l¾mâô¦ßq¯ì6¡¨µ=}[d.ÛNcX»k
+ùJŞ¦f@ M6\àóƒL1$Ã69ún£i?Û¶VLâ³‰Qs›û&aÿ óíç­KGjÜf¸Ão¬…z¥vŞ>S”¬.®Í#¼Z€sÄ Ço©Ëx‘1‰İÙ?sÓÔ¥u[Û}NÙş5›Ä.¿U6Kàw‹½l`¿Ÿ‡ˆê¶*È$q*ˆ”±TòÔÀ×åƒ[Ó—ª{¨'Ó{i	6ÂPÒï
+ Œ{¼#åÙğŞGœ‰@î^:Ë¨ş¡ô]»hMŒF«ÆQ~Vp±»®xUdbb=»¬×²d3BÃˆb”PÓ_n
+a%ŒY‚€È‘C
+aäŒ±ùG#²GQÓa—eÏ3”\}°ÏŸl2ç{}ãxŞGÇÍ2>cxÜ¾Ñ¼LLo>w¾ınç ³›dÌ)fÕ‰ºbvÈA7Ïşœ\<K\óÆ9ñŸ<sñöÃüıóÿ ğÇãïó“ı±«”óCÇÇŞh¾~ÿ ßøûOâvŸûO‰ş'ïÓ¶˜ûøñ¿ŸGŸ3¿Ú<O™ñâ‰ëî.3"'
+€!ø0â“^Ys†&2 X¥…p|çÇ8pYÙ?9c–?“ß½—ãÇçñı·Ÿ´oøßïøé¥" f l)ƒ šQæABeÓúW^cÇ˜ëœ8y4 …‹8°ÌòÃ
+Ëñ„‡±HD¼ÿ ğ†sá$ósÇ´Pñ”¼ÿ <úrÇ¸Å®&"XÀ\IO‰#€Ü§ûF&~iüFûôÖ°R§8„ˆP–¸„#‘”%dÙÄ~æÂÇû‹hêÓŞÚjÇ×½¢÷QÛßÑm*ôÈ)Î²³Ew¦›Å…X­‰Eˆ!à…‰ÂdB™pq$x>8’Lx÷–Âµ–Ö9b™Û’QweÄKéœGÏ4Gî‰ÇA4Æ¢§«0tóô*ä¨Ó¹î;uóTçW¶q¡³b£¥1$¹0™?™;2vö±ºµÔëïkí÷jÍZÏAÖÊu…$İ…³/Ûm©µª•¬Qƒ‘?D¶ÂLË“Û8şœQ„,|ã?–Åso{‰‡"ºª ²Ãí*¸-¾m¤¢`§ìİ1¼D…×÷ èâ­Ü£•ÍÙÎäG„Å`«w²—%réÄLHˆqÚ`ÊXÆ”%3<hEvJÕŠÚŠjí Óì«äİ)¼˜êÛ…fJ$oØc³Bãğ`œ³y2×<üÅäöõJFc—Ş`JFJ"xn3Çx/¶Å÷üÌL=u´í…º”,’ÛE¹
+ˆ¶ì„®¾Iõ‹=»ê‘ó÷™•< Ğ1Şxô=é½[êz].§¥Òêz].§¥Òêz].ŸÏñïÒBvWtw»¯Ë][»úqÖ6’¥M¿gRU68Aåçˆä:³È?“Ş<æ	$Ç8ğËOiäE«9
+Ó<aøÆ*gï°›–3ÿ ÔÎİ`¨\Ñi¼.ƒÔ ˜°Ì&¾©“Z$¸C[Suª(‰˜	d=¼Èo´Îın·yĞ{ù¯w.‹4±t¯bõ÷~Ï¥ëZlwzŞ‹İíi®1Ê¹v¢ìr×4S‘{Õ£
+Û}ƒTfé”Ø4åÇ7üÙEtwÃzòn/%E”XÏ`µ¶T¼‚ÕX¶ÌHÿ ¸™	0™·˜)åÎ¸šXşŸ_Ãz“®SYâõ]*¬/ßÆ£#sE_È¾•ÌzØƒàÒ/m”Ö„ŠQR¯Dµ[Ö£ÔŠúÿ á#»–Ûs6Oi¬Ÿ¦í¾á~?a­èvÇÙÕy€ÑúÛD>vC‚¸Ø4[Q›ßXÛ€WÌYSGùCw Jı¾÷+Ì¶[]3l°qÌhOauÈ¢gºÄi;òñ#Õ{ØÜ¦pµ­:6m!ŠÓ5{ºj\zèºÆãlAç2YÄ$T3FõPzè.Uİ.#;‰§¾Å{ü‚ék.õC­Éar5ïN:ÁH!¬Pp$,ç©Ñ¡•„Bñïõ£709'ø÷ü8ÉÄş}Ï«&µLïÛ«D7şxrÿ ù˜ëUı>^„<®T7õ†§½Ú™æJW•bOûä!œd¿;oùëÔeâç¬Œî%/ERÂ©ê~şmÿ 5Êÿ PûNù«'ÊS.%»Ô‡ÑJ+ú°Çe:€®i¬ˆS’–Af˜ˆájÅÍº¼§æu%*€Ë¿¾Å’™/u[Ü[–Tˆ/¦£Y”y gzwŠ›uò2åhúº‹!6rúêÅÖê8”‰[§	ËåŒZ50ZTßPšµw† ‰ØcQ_ô†©°4¿KºMRëŸØ—>hY]©ş@t¶´mÓô°²ì²óIµ«}¸7°äyŒ,ZagÁChË»
+saŒêáU&¯ §Š•É´b‡nÒTF¸¼BĞß›;X÷h°[Çÿ 0L8Hí{YX©—ÖZÚŞ§ÎQ£båº·4Nk"Yeß g'áìi?€ĞàHö“1iöò·Ù;ÇJ=KmÔÃZ7^—ëÖ´¨‰İMíiğOŞ¬ÃEi—`8øĞškR©#ä5¯S#¼†4T«2:œÙ”,ıfEæVÉ-,>ÌÇQgf¨ŞˆÉ—]¹ábhš˜ÅE‘Ú"xL,æ;†¦FÆJ3;ê;òU³Öªc3Z‡!ÏLéÊ¶ÜÀ©©Â¿³®ÛH‹§ºrVjû‚·\aX9¢ÈâyH)íêÍÖôb}CVÚ‡wónÉç‘fœ­Z•ŞÍiEOÔZ#p”i¨e…mÈe_:„m/Ğ™lb‚ÌUÀBCR[h5 ªM„$Bÿ s&0µ|“V=Üô?Y¿L;7¬c6ìµ”+FaÑW!™{5¥|RÉM¦äÉ™²,ˆ§ßÃ“†¼óùê¶ØeŞ#İRzŒZ£Kw°Ó<-µìY>ĞuT*›ZĞ2ËHÈˆÜ7	b&¿6Dè1¡bç½“ş ë¼WíU©½¡ı@åÜeõ0G·ÙÛz÷™Ÿ–d†cx¾‰ÑÛ_Dúy¤œûßÏú{zÎ6=•‰®qˆ¡r.“în@Äœ&H&,|¬AÈM²{BÅÖĞ|Àn-X¶Œß^YúQ5>wÅ…:RÜkºâÉÏÂÈ¶BÅˆÉ‹> Î ÙcÒCœĞñèİûLÇÕÔV«vÁŠÏ€¬ˆ à`©RßˆOø¢SÇÌùùëH`êë‚iìÛ²LÇe0>¡{àEÛ•]dkærV¶ØY‹{FKhI‰±[®
+z&Øû6íT½ößbSŒE^¹Ø|DêÃ19z
+Ì°0ÜËf	e°ÀÏÁÙLFÈ»,x5|Àâ,'†W!¾÷Wfª„¯·ŠÅÜVÀ²ÿ tÉj¿0—"%„Áo¦9üİSÂaq™
+šâ²Kµr‚}qÔúHÛW—§'áîe b˜²@›b[.Gi‚É9Q„0¢p½wÃsF»Ç<ıb‡ZãÍæ—$ŞèrÃqÂï‚d^Ûc¸ù}øİF÷ö“Iú¨`Çá,X†ÊÔb6X®,ãÁé¡ÆDX‰„Êwìœ™6Yõ{ÒŞ2S3;ı^q%$ÕE§ÏıY`Y‘õ‚¾ªĞ=©Ë{¿†ªÂW„V+o_ÚEhú…>I^İ•ˆ3=y^ÛœQøÛ›_cøãN6m÷yõ¿'"IâÒÓŠÏÑæ_ör¿õWõÿ ?ûú?_ÿ ¯YôíÈøşÎlíï÷íó.Şÿ ç‡ÿ Ï_va>#8<$æ7øÄáñs–åÆâSIw¹Çåîû}İ¼w9õ^úó¢}OK¥Ôôº]OK¥Ôôº]?oãçº±ënäïadE-%ãúç³Ë®A?ñ}CfÒ[3Z$üñÎ8Rè
+Œsö‹“yƒyâ.sçÑí<ÿ mfı<û8ÓgÉ@9s1æcíşzÀ?P˜_êL6‚Óğø¬Y½O$yBYsuKaÀXCÏóÇ}¼õº®zïFéryHèebÑŞ+÷i¯Wº5b×ÍÆÈ©ôŠ£³`’É°6ÙF
+ÖÒã¹jìì®5åA3@8Áo BœaÍ•­p÷f²è­¹\pö]a|<Ö©jèbXÇ8v™ï‘,"chğ?$6á“¨rZâöÒİwr¦ˆÇéŠTã[WÉdUµ­-c6E
+8×±ê†â,eäm9ÈlvF{Uì3<§Yê«àºÎ'w(¶~˜l¸=™ïgµEÆ‚^½ƒ¼[Ÿ[V2+Hl­_oãGµì[V)Ç¾.É/Ö(…fñ&1ŠˆËS
+T]œıà:,ªRwKíÆAê êâ_ciqƒ¼ív]@ìW:‡Ñz¾³Æê4BtÖR…ÑÈ‰ÃdlñÎcsÍGv¾>§vh»¹³$O]E+ß?Wrv?~Uì– @”»çPº­w=dS}Ô‘h¥¸|RøçÏyàC³	³ÿ ¹0‹Œùÿ ÛŸC5÷20Ò¤éS9ÄI	ÌÆÿ ûÎÛÇß­SĞ
+1ĞNÆ,åÃCWjŠ+o$è«uhL~$øAHş&vè‹N¥l¥OÓ
+|C>ÏpØilÊ+—w;®Y3¢¡LS³ï!4¿™ZF²±°1…œ˜á ¥—>8Ã&~ã;…8t¯¿³rV’]­Ä à1´˜ À—ÌGR[L×2-¥‡½™ŸXë3Œ”bí¿£´şT’{…c5cBÓÊÜ€šEDc3Áóm­z¢–æ×]kâCg¡oÁ÷d—!íwt¿åjò¤Y±hzÅS,~5ˆdØn&1Zƒ1åPœyåZ	6Ø‡p(3=¯äF
+]¦°ö…Óc~$^":¾ü•ÕÓzı]Æ¸@h95£¹¯âaÆğh¹L¾²ƒ¦²X5ñûf'¡ìî|8ü¾!¶Ñ"´^çÙnëÉ5–Ì°Ê–^?*ŞX©ÓÈÑÿ R#¯ìÆÇ„ù•œ\q‹·O"ßî{À{Ü„È¢H#·ºˆ¢wñ;mÆ6Û«O4<¤}aÇG»+13F}r«¼^~b«Ê}ßß³¼÷¤wòv±}ÁPÙ»†í M>‡‚6‹Â;MÜãˆ]B ([ˆÁHÌŞÈÆCàÊ Äk-?ıG»8}IÛÁØø#Å+b…›Ù ˆaK»e3ÀHä%äİ¶G&A¸n5¥iV1²ãÆıØoÂP:_J4˜,O6vØ¦‘î[¯ºÅÅ¡™„÷<ÇUp›W«m†TÔ–®ólÆ¸ÃŸr{]Å~Ùw8ÑøÉ@öBÁ3{†0Râäé‡2x(¿†<å'®Pr¡V §¼ÈR§â¸1Ì(™Ù°ˆ£i)Ügi’·‚íÆj:Äõ7ÕT…Œ]¸ú±¤´©]§R}Ë*Í•Uí$Åg*â|8)Ú&éİ4ªNƒ¶EÛmIB5|ÃãUÜîÌì4yGdzÊ¥YŒ‹N»ÎİT˜ö¶´­êK•Hë&¹Y•ƒ°f>Cz‘ Ø)fœö_ø…æ;ñô¤LDÁÒØ¥´”—ûmĞl%ËYÚŠÈb½c¨uãİ
+æÆÓxÛìÔ»7fjd¢µ‚+½6œÂL$PÕ»ŸåĞ¥-Mj=ªÅ®ø”¤+×î2{ÛŞUÁ_°ª¸»ßSÚÒ±:¨[Õªµ÷nXUe7÷…tğŠ¬’òˆy=™‚Ÿ„3`¼Èï_áPd¬o$;d`§µæGbØ7åÕ«1’¦5å¾°Ğ˜}œxÖŠúWJ[67/e4ñ­Ô'ªí›Z¬ÈŠ'¸&L…î]W,÷UêóRyâİÅ`³‡	£*ƒ®ŞvõÂ<XJ\ÌúÉêD,X
+ò ÌbF’9b›<9ãŸL#¯K,YGïLßÈ„Œñßf"F6¶Ÿœ?1¾ş:$¼&¦¹ØÉ#Õ:ö€d—Zú4’r‚DˆXµ\AÁ	(Y'%>:¦ñ»qí]ÿ ±zŸA<A¡¿•XJ´<VB³%¢eÑĞ(ÃÛ´÷Õ2ìµµ65ªÅ…‚’]¨âËô&;xŒªØ5MµU8®ÇJÔ2Óß”›i
+I¹ˆa@ÁxèçõNz–›Ëê*ö5Ã†İ–•i®P×{æõæTIâqiUl½	±iå¡¥[œıT±ê-Ã,ÑœÜ“3¶˜G‹V_dk*gáµrp¯ó$¶\Š_ìÒÇl€ú…}±bàiùS§m’ùå¿’ÙåÇ~\v<f&oÛ>ièÄæp¢2E›Ã‚UdÊr¸ø®øCÊ}ÆĞ—Á„¥¾ÎaÀ§”oj]¹a5"ä:k9:Í“¼+‚¬Ö÷C$}Ídè•Ú9Qø’e‰ñÕ™Ëû<ãåœÓ¥ÀW9ƒ/?N]{ W{	2
+2ä$ÈPœl;vû“,ÿ —ûŠ:òÆk	QV]k5‰®ª}ŸvmÉS¯6/®-‰vàVP$êá1Íë5AG67X{©™XØº#jÖŸ­…LíVgLlæT¿¿±;¨ ÔÕ¸]˜÷ÖzÛÄhÕµ$FmÎ_+Ã"9Ä–Nµ…lëºp=£™æÁ“ü±#Ü!‰(^üü~İ§Í<vªÓ9ják¨16+³½Úg½J;£Y³a‹R“bk×²‡9À2¥	Ç2‰­]ĞïõI:Ó¯ïµPBuılÓ­4«=p ì¿F6ŸÖŠ-Ò°GÃú¹¡iúIdÅŸëeˆşú¹ã/1Æä13#¹rÜ;ÌGÌ?‘ıÑù‰£!´bº™}¶=Ğ.­ÚÖXU$åQj,2šÒØ•CöíË"C—(˜èWÓ:¹Öét‹»ÜvÕª»©5&íWºôÛ]~×û¨¬é¨ÎŞ,zÖW!d²C³;5q/$Sä 	€"|2ós„¸]£t¨›Ê§Å„Mv-ĞR¹.EQ÷û~cmúâµ¾ˆ©®iâjÙËåğŒÂfœÇßÂšuw’†!D,zÛá“\	ÁÄNó:d;Ïµó¬Ç5a×¯	ÒÓ½‹ˆá­+ÛN 1ø|$hµ5ÔUÇ‘‡Ã0(¡%+pãfÇ8ãÑ*ùò«¿¶ÆãÑ¿’íBÆÛÌ	Äo·æwë6ÍúÔ ¥êPuædS<“9+«f¯æ×Q&„Oı"P?ÌuŠİ>v¬½°Ajì_»™ø‚ılºÆÏ¹æ´?‡ãÊP¾¹š2¬%Ãüeı|#s7ÿ ›çïëËÙ´PVq¸÷”FÑ-Ÿ˜Úxò9Ş<NÛo~¥ÃzWN×š¸Quö!2D¼mœe82/¼²SHIŸyıò_ãn–‡u»okïêÏv]èûZº¢jğiÆCRÔÕµâãU!hï1<^xß­œõ`„qã8¸ÃrzÙ^|¼Öµ}5ª­à ÷™Ÿ´íş?iº'HÔĞØ_‚ÑÈd2a9ÙF^ÊJ
+ãmd-y2Pµ¬¾qåÊG””””Îñ±-È/j(ÛÎ¯Øşo¢\¶õOXôeÇs¯¨4zıe¥XX×)T2…å±¬Ü³kó8ˆüŸğıÈíƒù‰œÃ•º-—÷y;Û{HaÌ‚aªtDFÜfy$cæ‰Ü$£ï´ÀË˜èÇ`mé”ã†Èg•©2¨Ù°w(µsÎ ´Kx •01™QFın¼¾x»‹’H«¢Pzô­5MƒQşºnıÍ<µûSI’fôÓ¶µ÷²¡1³“¸¥„îv8óf…§ëò-¹Ô¸ñ€¬<UÙPğ"Z„d;d*3 ’P-k1!>0ÆA3æëÿ ÃşŒ÷é™FçÍê7Éì³B-w)Œw]”¨æI`~3IBÆæş@]İbTÆ4¦è’e:V`DR•h¬A8Mb°;Tí–YÅp]FÚzóhW©Ä‡?:ô¿íœ}äyû¦L.ùËÿ ÍúEÍmÜó»2Îf¯ ¢™‰§­¡P…í@0Õ²a¸®VPH±R²œeŒ"iVİ„wS)eñ0,‰Y$¦WTSüÒ÷™X¬£ëx%ÈÏØösvÃ[Ö¤šãm»+©\àÿ “a©´–Ww XÜÅ]ÏzMŠ€.âœ>qyË«®£À×MckeìkÁìÑW{“¥r]›L&H®;¶ÎL‰™)gĞífı»Ìšeï¶¬uhÅª–>İ¨§,Rÿ ‡M Ÿö)šÊ7šqû´hÉ—¢½û¸Uë­m§¿¾:e¨µ&ÇlÑu›,à–¨®ø)+œ †M÷ålK&[X28… ¼æõIW¬¤k,YÉ5,ªÚP~UQÁ‰LFÅ1$>c—ä¸í¿Z)§¬es9ï…ÖVw?ˆn'™H”_v-‹%Åx""Pö†G¶p¾I0Â1\GLn…æû¼´…¨í(vc·.â/r0’Ø¾ØÆ*Y-ş"¾ÖÔ˜ ¶‹š ôØp¥MY—“KŸ),ÔöŠ-rdã›‰ÍŞJI<áÂNkdÌ¶ømh1!(NËNßR·”O³ì¡š#ğ¨ÈÔNXuC¤kÛó*¹K\éœ–Un2m‡„Š²>Úê[Z;]X<íö”Úg[éÚÛÚÇ5Ëm"»Ş¿£áÃ5ôH5«E°¬‚˜ŒÑbk|~ÂÕ¶oí—}‹-ï4lWg˜õÒíÌ
+9"o1–CÊ×d d¸¬P»2;r°cÜ²lßBêú¥fûmd³Saé·TRU(Ù­s…9¿qÖë×‰yŞ}S ¦¥ÖÅcÒè
+tä®ÇZq»üŒöSxö…7oÍcW¢nZõ3úBj	æa^L°¯ŞÊöeê/Ú¿Í³¾2P¦uişÿ Ô@á‡ƒ(3#dîÎ@g…‰ãó
+ÄW+â0ŞrQ#3œ”ÆûDÄ@íÚâ½1ÒØÍ íÅYÉ`¬Ü÷ÖBÛ¢½‹A'›qÃSnÌVDA ºWÎÁ0ŒùshŸ!{SBÕµİqv°Ñû†›ØÛ#di«ÆÃCrÎé«İ‚»vÖêÇT.ÕUò!ÙkƒÂ	It¹†”d²:¢9Bæ0ÎÔß5
+bk×l m(pÑwµ½.+U{ŠjÊgeä3D´ûLçx³Ş™asö²Y“Îc×–¥Œ«”¥EÔJç`‹ûFí+móÚMJjê_ŞCÓÌfyĞï€Ì]ÉV?¨¡ »)ië`ú
+Ö•ælXãu	À1wö›o±††¾]•³Fpœa¤¿©²{‘O·’! ™í˜ñs]ò@0D;’Ùp†€8’å%Í#Ğ-_·19wHY÷mï·Ø´Éoqv±ûYn0ºqZ³,ÚŠËR‰`KŞçß+jvªÆ“)ÀŞ@Ø«6M>)*çòğ	)ûÉkçĞáˆü)8eû	O«ÚÀÜ`Ë}FZ†ñmºëÇQŒ886¼Œ¡  á@ ”PUİÉ©#!†¯éÿ DRzìU¹,—Nn6á&¡Ó½YÓoîğdrrÆ	?Ï8¦Ô‘Àz;ªµï6qj}ü-¹p¬ü*—¸ÇXK78¹¸ã*˜ö*ì8Üd€8šĞ#rè\÷5ŒõN~F~à³º®ùÄN!Ó ¶B{€1.‘å'],l*BEm2Lı?hw*+¶ö£*ò S—îènéB^“;Ÿ†£Ù­ï‚MrU|‡r>$«]°ÛV{'ä¯°İ®ÑH4Ü[A=ÕGaGr€ks€cêerr¹³Zˆ/SÁ÷c€!öçKIùÄL1ÊÌ•‹Ê®—pãXŒÆF
+Lä†æ")Ú6‰)‚aI–ó=uÚcÓ-=¤s÷5!ù ±r…ŒqÑ"¦¼p"ÕùÈœŠjÔA¥³Ú¨-a…Tn
+ˆ‚ğ¾ıëCëÿÙ            1   <   R   p      –   ¨   ²   ¸   ì   í  ±;  ±C  ±L  ±b  ±|  ¹°  ¹Ş  ½Ä  ½Í  ½ç  Æ#  ÆS  ç`  çi  çs  ï^  ïŒ  õŸ  õ¨  õÂ  ş
+  şF !¨ !± !Ë * *8 [‡ [ [ª cà d ne nn nˆ vÄ vù             3             —h
